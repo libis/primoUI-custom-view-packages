@@ -1,0 +1,113 @@
+<style>
+    @import url(//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css );
+    @import url(//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,800italic,300,400,700,800 );
+    @import url(//fonts.googleapis.com/icon?family=Material+Icons );
+    @import url(//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900);
+
+    #DescriptionLimo .md-headline#ContentKULLOCLink::before,
+    #DescriptionLimo .md-headline#ContentInLimo::before,
+    #DescriptionLimo .md-headline#ContentSearchTips::before,
+    #DescriptionLimo .md-headline#ContentTimeTable::before,
+    #DescriptionLimo .md-headline#LinkToAZDatabaseList::before {
+        font-family: 'Material Icons';
+        font-weight: normal;
+        font-style: normal;
+        line-height: 1;
+        letter-spacing: normal;
+        text-transform: none;
+        display: inline-block;
+        white-space: nowrap;
+        word-wrap: normal;
+        direction: ltr;
+        font-feature-settings: 'liga';
+        -webkit-font-feature-settings: 'liga';
+        -webkit-font-smoothing: antialiased;
+        font-size: 20px;
+        margin-right: 2px;
+        vertical-align: middle;
+        color: #53738c;
+    }
+
+    #DescriptionLimo .md-headline#ContentInLimo::before {
+        content: "info";
+    }
+
+    #DescriptionLimo .md-headline#ContentSearchTips::before {
+        content: "help";
+    }
+
+    #DescriptionLimo .md-headline#LinkToAZDatabaseList::before {
+        content: "view_list";
+    }
+
+    #DescriptionLimo .md-headline#ContentTimeTable::before {
+        content: "access_time";
+    }
+
+    #DescriptionLimo .md-headline#ContentKULLOCLink::before {
+        content: "my_location";
+    }
+</style>
+
+
+
+<md-content layout-xs="column" layout="row" class="display-block-xs _md md-primoExplore-theme layout-xs-column layout-row">
+    <div flex-xs="100" flex="60" layout="column" class="layout-column flex-xs-100 flex-60" id="DescriptionLimo">
+        <md-card class="default-card _md md-primoExplore-theme" prm-text="" dir="auto">
+            <md-card-title>
+                <md-card-title-text>
+                    <span class="md-headline" id="ContentInLimo">
+                        <a href="https://bib.kuleuven.be/english/ub/searching/collections/index" target="_blank" id="limo_content_link">
+                            What can you find in Limo?
+                        </a>
+                    </span>
+                </md-card-title-text>
+            </md-card-title>
+            <md-card-title>
+                <md-card-title-text>
+                    <span class="md-headline" id="ContentSearchTips">
+                        <a title="show Search Tips" href="PleaseEnableJavascript.html" class="searchtipslink">
+                            Search Tips
+                        </a>
+                    </span>
+                </md-card-title-text>
+            </md-card-title>
+            <md-card-content>
+            </md-card-content>
+        </md-card>
+
+        <md-card class="default-card _md md-primoExplore-theme" prm-text="" dir="auto">
+            <md-card-title>
+                <md-card-title-text>
+                    <span class="md-headline" id="ContentKULLOCLink">
+                        <a href="/KULeuven_regio">
+                            Limo on Campus
+                        </a>
+                    </span>
+                </md-card-title-text>
+            </md-card-title>
+            <md-card-content>
+
+
+
+                <div id="select_campus" style="padding:0.3em;
+ border-radius: 3px;
+ color: #53738c;
+ border:1px solid #53738c;
+  display:inline-block; background-color: #fff; font-size:0.8em;">
+                    <select name="campus" id="campusview" style='padding-top: 0.2em; color: #53738c;:' onchange=" document.location.href=location.protocol + location.port +'//'+ location.host + this.value;">>
+                    <option value="">Select location</option>
+                    <option value="/KULeuven_ODISEE">Brussel,Gent en Aalst</option>
+                    <option value="/KULeuven_LUCA">Sint-Lucas Brussel en Gent</option>
+                    <option value="/KULeuven_VIVES_KHBO">Brugge</option>
+                    <option value="/KULeuven_UCLL">Diepenbeek</option>
+                    <option value="/KULeuven_TMOREM">Sint-Katelijne-Waver</option>
+                    <option value="/KULeuven_TMOREK">Geel</option>
+                    </select>
+                </div>
+
+
+            </md-card-content>
+        </md-card>
+    </div>
+</md-content>
