@@ -1,6 +1,6 @@
 
 <md-content layout-xs="column" layout="row">
-    <div flex="60" layout="column">
+    <div flex="55" layout="column">
         <md-card class="default-card">
             <md-card-title>
                 <md-card-title-text>
@@ -13,7 +13,9 @@
                 </p>
                 <p>
 
-                    <a href="" id="mimic_signin">Signing-in</a>
+
+                    
+                    <a href="javascript:angular.element(document.querySelectorAll('prm-authentication button')[0]).triggerHandler('click');" id="mimic_signin">Signing-in</a>
 
                     Signing-in with your Library username and password will allow you to:
                 </p>
@@ -25,23 +27,6 @@
                 </ul>
             </md-card-content>
         </md-card>
-        <md-card class="default-card">
-            <md-card-title>
-                <md-card-title-text>
-                    <span class="md-headline">Questions? Comments?</span>
-                </md-card-title-text>
-            </md-card-title>
-            <md-card-content>
-                <a href="#" class="arrow-link">
-                    Let us know what you think!
-                    <prm-icon link-arrow>
-                        <md-icon md-svg-icon="./images/chevron-right.svg"></md-icon>
-                    </prm-icon>
-                </a>
-            </md-card-content>
-        </md-card>
-    </div>
-    <div flex-xs flex="40" layout="column">
         <md-card class="default-card">
             <md-card-title>
                 <md-card-title-text>
@@ -57,6 +42,77 @@
                 </p>
 
             </md-card-content>
+</div>
+    <div flex-xs flex="45" layout="column">
+        <md-card class="default-card">
+            <md-card-title>
+                <md-card-title-text>
+                    <span class="md-headline">Search tips</span>
+                </md-card-title-text>
+            </md-card-title>
+            <md-card-content>
+               
+                <table id="help">
+                    <tr valign="top">
+                        <td width="70px">
+                            AND
+                        </td>
+                        <td>
+                            Find results with both words<br />
+                            Example: ECB AND banknotes<br />
+                        </td>
+                    </tr>
+                    <tr valign="top">
+                        <td>
+                            OR
+                        </td>
+                        <td>
+                            Find results with one of several words.<br />
+                            Example: state OR sovereign <br />
+                        </td>
+                    </tr>
+                    <tr valign="top">
+                        <td>
+                            NOT
+                        </td>
+                        <td>
+                            Find results that exclude a word<br />
+                            Example: celtic NOT Irish <br />
+                        </td>
+                    </tr>
+                    <tr valign="top">
+                        <td>
+                            ?
+                        </td>
+                        <td>
+                            Add a question mark as a placeholder for one character.<br />
+                            Example: wom?n will retrieve woman and women <br />
+                        </td>
+                    </tr>
+                    <tr valign="top">
+                        <td>
+                            *
+                        </td>
+                        <td>
+                            For truncated searches, use an asterisk<br />
+                            Example: mone* will retrieve money, monetary, monetaire <br />
+                        </td>
+                    </tr>
+                    <tr valign="top">
+                        <td>
+                            " "
+                        </td>
+                        <td>
+                            Find results with the exact phrase<br />
+                            Example: "Sovereign debt" <br />
+                        </td>
+                    </tr>
+                </table>
+
+
+            </md-card-content>
         </md-card>
     </div>
+
+
 </md-content>

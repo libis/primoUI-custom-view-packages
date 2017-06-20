@@ -3,46 +3,79 @@ var gulp = require('gulp');
 let glob = require('glob');
 let prompt = require('prompt');
 let zip = require('gulp-zip');
+let concat = require("gulp-concat");
+let babel = require('gulp-babel');
+let rename = require("gulp-rename");
+let debug = require('gulp-debug');
+var wrap = require("gulp-wrap");
+let runSequence = require('run-sequence');
+
 let config = require('../config.js');
-
 let buildParams = config.buildParams;
+var async = require('async');
 
-gulp.task('create-all-package', function () {
+
+
+function removeMatching(originalArray, regex) {
+    var j = 0;
+    while (j < originalArray.length) {
+        if (regex.test(originalArray[j]))
+            originalArray.splice(j, 1);
+        else
+            j++;
+    }
+    return originalArray;
+}
+
+gulp.task('build-all-packages', function (done) {
     var basedir = 'primo-explore/custom/';
     var customFolderExp = basedir+'*/';
-    // console.log('Please Choose a package to create:');
+    var tasks = []
     glob(customFolderExp, {}, function (er, files) {
-        // Note elision, there is no member at 2 so it isn't visited
-        // console.log('\r\n');
-        /*
-        files.forEach(function(element, index, array){
-            console.log(index+1 + ': '+ element.replace(basedir,'').replace('/',''));
-            console.log('\r\n');
-        });
-        prompt.start();
-        var property = {
-            name: 'package',
-            message: 'Please Choose the level you want to create the package for'
-        };
-        prompt.get(property, function (err, result) {
-        */
-            var skip_codes = ['primoUI-central-package', 'CENTRAL_PACKAGE', 'CENTRAL_PACKAGE_OLD'];
-            skip_codes = [''];
-            files.forEach(function (element, index, array) {
-                var code = element.replace(basedir, '').replace('/', '')
-                if ( skip_codes.indexOf( code ) < 0) {
-                    console.log('Creating package for : ' + code);
-                    console.log(' in  : ./packages/' + code  + '.zip');
-                    return gulp.src(['./primo-explore/custom/' + code, './primo-explore/custom/' + code + '/html/**', './primo-explore/custom/' + code + '/img/**', './primo-explore/custom/' + code + '/css/custom1.css', './primo-explore/custom/' + code + '/js/custom.js'], { base: './primo-explore/custom' }).pipe(zip(code + '.zip')).pipe(gulp.dest('./packages/'));
-                } else {
-                    console.log('Creating package SKIPPED forr : ' + code);
-                }
-                console.log('............................................................................................................................................');
-            });
-            
-            console.log('\r\n');
-        //});
+        console.log(files);
+        /*create js custom.js*/
+        console.log('build custom.js')
+        for (var i = 0; i < files.length; i++) {
+            var code = files[i].replace(basedir, '').replace('/', '')
+            config.setView(code);
+            tasks.push(function () {
+
+           return gulp.src([buildParams.customModulePath(), buildParams.mainPath(), buildParams.customNpmJsPath(), '!' + buildParams.customPath(), '!' + buildParams.customNpmJsModulePath(), '!' + buildParams.customNpmJsCustomPath()])
+               .pipe(concat(buildParams.customFile))
+               .pipe(babel({
+                   presets: ['es2015']
+               }))
+               .on('error', (e) => {
+                   console.error(e);
+                   this.emit('end');
+               })
+               .pipe(wrap('(function(){\n"use strict";\n<%= contents %>\n})();'))
+               .pipe(gulp.dest(buildParams.viewJsDir()));
+            }());
+        }
+
+        /*create css custom1.css*/
+        console.log('build custom.css')
+        for (var i = 0; i < files.length; i++) {
+            var code = files[i].replace(basedir, '').replace('/', '')
+            config.setView(code);
+            tasks.push(function () {
+                return gulp.src([buildParams.customCssMainPath(), buildParams.customNpmCssPath(), '!' + buildParams.customCssPath()]).pipe(concat(buildParams.customCssFile)).pipe(gulp.dest(buildParams.viewCssDir()));
+            }());
+        }
+
+
+        /*create zip*/
+        console.log('create .zip')
+        for (var i = 0; i < files.length; i++) {
+            var code = files[i].replace(basedir, '').replace('/', '')
+            config.setView(code);
+            tasks.push(function () {
+                 return gulp.src(['./primo-explore/custom/' + code, './primo-explore/custom/' + code + '/html/**', './primo-explore/custom/' + code + '/img/**', './primo-explore/custom/' + code + '/css/custom1.css', './primo-explore/custom/' + code + '/js/custom.js'], { base: './primo-explore/custom' }).pipe(zip(code + '.zip')).pipe(gulp.dest('./packages/'));
+            }());
+        }
 
     })
-
+    
+    async.parallel(tasks, done);
 });

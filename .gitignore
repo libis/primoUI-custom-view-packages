@@ -1,1 +1,7 @@
 node_modules
+packages/CENTRAL_PACKAGE*
+packages/primoUI-central*
+primo-explore/custom/CENTRAL_PACKAGE*
+primo-explore/custom/primoUI-central-package
+gulp/tasks/copyAllFilesFromDev.js
+

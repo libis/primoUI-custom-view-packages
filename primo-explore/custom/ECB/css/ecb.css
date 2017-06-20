@@ -121,5 +121,16 @@ prm-user-area .md-button.user-menu-button {
 
 prm-user-area md-fab-toolbar ._md-fab-action-item .md-button, prm-user-area md-fab-toolbar ._md-fab-action-item md-input-container,
 prm-user-area md-fab-toolbar .md-fab-action-item .md-button, prm-user-area md-fab-toolbar .md-fab-action-item md-input-container {
-    color:fuchsia
+   color:#226091;
 }
+
+prm-user-area .user-menu-button .user-name {
+    color:#226091;
+    text-decoration:underline;
+}
+
+/*
+prm-user-area prm-authentication {
+    margin: 14px 0;
+}
+*/

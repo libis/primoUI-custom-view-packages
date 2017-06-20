@@ -17,10 +17,9 @@ gulp.task('watch-css', () => {
 });
 
 
-
-
 gulp.task('custom-css', () => {
-    
+    console.log('custom-css: ');
+    console.log(buildParams.customCssPath());
     return gulp.src([buildParams.customCssMainPath(),buildParams.customNpmCssPath(),'!'+buildParams.customCssPath()])
         .pipe(concat(buildParams.customCssFile))
         .pipe(gulp.dest(buildParams.viewCssDir()));

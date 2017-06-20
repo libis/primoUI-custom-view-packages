@@ -1,3 +1,8 @@
-# primoUI-custom-view-packages
+primoUI-custom-view-packages
 
-gulp create-all-package
+ 
+
+gulp build-all-packages
+
+/* gulp create-all-packages
+ */

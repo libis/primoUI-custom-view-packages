@@ -1,3 +1,18 @@
+prm-citation md-nav-bar ul._md-nav-bar-list li.md-nav-item[name="chicagob"]
+{
+    display: none
+}
+
+
+prm-action-list ul._md-nav-bar-list li[name="RefWorks"] ,
+prm-action-list ul._md-nav-bar-list li[name="RISPushTo"],
+prm-action-list ul._md-nav-bar-list li[name="EndNote"],
+prm-action-list ul._md-nav-bar-list li[name="EasyBib"]
+{
+    display: none
+}
+
+
 add-pnx-xml {
     z-index: 15;
     position: absolute;

@@ -1,0 +1,17 @@
+
+
+prm-topbar .md-button a,
+prm-topbar .md-button a:link,
+prm-topbar .md-button a:visited
+prm-topbar .md-button a:active
+ {
+    color: hsla(0,0%,100%,.65);
+}
+
+prm-topbar .md-button a:hover
+ {
+    color: hsla(0,0%,100%,1);
+}
+prm-topbar > div.top-nav-bar {
+    display: none
+}

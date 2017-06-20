@@ -1,0 +1,61 @@
+/* view color hook */
+/* ---------------- */
+.md-button[aria-label=Search] {
+  color: #0f7d00; }
+  .md-button[aria-label=Search]:hover:not([disabled]), .md-button[aria-label=Search]:focus:not([disabled]), .md-button[aria-label=Search].hovered:not([disabled]), .md-button[aria-label=Search].md-focused:not([disabled]), .md-button[aria-label=Search]._md-focused:not([disabled]) {
+    color: #031700;
+    background-color: rgba(15, 125, 0, 0.1); }
+
+.md-button[id=payFinesNow] {
+  color: #1f98bd; }
+  .md-button[id=payFinesNow]:hover:not([disabled]), .md-button[id=payFinesNow]:focus:not([disabled]), .md-button[id=payFinesNow].hovered:not([disabled]), .md-button[id=payFinesNow].md-focused:not([disabled]), .md-button[id=payFinesNow]._md-focused:not([disabled]) {
+    color: #08566e;
+    background-color: rgba(31, 152, 189, 0.1); }
+
+.bar.alert-bar {
+  color: black;
+  background-color: #f79570;
+  border-color: #ea916e; }
+
+.primo-scrollbar::-webkit-scrollbar-thumb, md-dialog-content::-webkit-scrollbar-thumb {
+  background-color: #1f98bd; }
+
+.primo-scrollbar::-webkit-scrollbar-thumb:hover, md-dialog-content::-webkit-scrollbar-thumb:hover {
+  background-color: #187591; }
+
+.primo-scrollbar::-webkit-scrollbar-track, md-dialog-content::-webkit-scrollbar-track {
+  background-color: #cacaca; }
+
+prm-user-area .user-menu-button .user-name {
+  color: #f3f3f3;
+  border-bottom: 1px solid #73E9FF; }
+
+prm-linked-user-selector .toolbar-select-input ._md-select-value > span._md-select-icon {
+  color: #45aab4; }
+
+md-toolbar.md-primoExplore-theme .md-toolbar-tools prm-linked-user-selector md-input-container.toolbar-select-input md-select-value {
+  color: #45aab4;
+  border-bottom-color: #45aab4; }
+
+.prm-primary-color {
+  color: #1f98bd; }
+
+.prm-primary-bg {
+  color: white;
+  background-color: #1f98bd; }
+  .prm-primary-bg.prm-hue1 {
+    background-color: #1d8db0; }
+  .prm-primary-bg.prm-hue2 {
+    background-color: #1b86a7; }
+  .prm-primary-bg.prm-hue3 {
+    background-color: #1a7f9e; }
+    .prm-primary-bg.prm-hue3-important {
+      background-color: #1a7f9e !important; }
+  .prm-primary-bg.prm-hue4 {
+    background-color: #187591; }
+  .prm-primary-bg.prm-hue5 {
+    background-color: #21a3ca; }
+  .prm-primary-bg.prm-hue6 {
+    background-color: #1f98bd; }
+
+/* view color hook end*/

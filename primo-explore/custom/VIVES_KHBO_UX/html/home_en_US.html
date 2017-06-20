@@ -1,111 +1,121 @@
 <style>
-    @import url(//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css );
-    @import url(//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,800italic,300,400,700,800 );
-    @import url(//fonts.googleapis.com/icon?family=Material+Icons );
-    @import url(//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900);
+    @import url(https://fonts.googleapis.com/icon?family=Material+Icons );
 
-    #DescriptionLimo .md-headline#ContentKULLOCLink::before,
-    #DescriptionLimo .md-headline#ContentInLimo::before,
-    #DescriptionLimo .md-headline#ContentSearchTips::before,
-    #DescriptionLimo .md-headline#ContentTimeTable::before,
-    #DescriptionLimo .md-headline#LinkToAZDatabaseList::before {
-        font-family: 'Material Icons';
-        font-weight: normal;
-        font-style: normal;
-        line-height: 1;
-        letter-spacing: normal;
-        text-transform: none;
-        display: inline-block;
-        white-space: nowrap;
-        word-wrap: normal;
-        direction: ltr;
-        font-feature-settings: 'liga';
-        -webkit-font-feature-settings: 'liga';
-        -webkit-font-smoothing: antialiased;
-        font-size: 20px;
-        margin-right: 2px;
-        vertical-align: middle;
-        color: #53738c;
+    md-card md-card-content span.md-headline {
+        line-height: 2em;
     }
 
-    #DescriptionLimo .md-headline#ContentInLimo::before {
+        md-card md-card-content span.md-headline::before {
+            font-family: 'Material Icons';
+            font-weight: normal;
+            font-style: normal;
+            letter-spacing: normal;
+            text-transform: none;
+            display: inline-block;
+            white-space: nowrap;
+            word-wrap: normal;
+            direction: ltr;
+            font-feature-settings: 'liga';
+            -webkit-font-feature-settings: 'liga';
+            -webkit-font-smoothing: antialiased;
+            margin-right: 2px;
+            vertical-align: middle;
+            /*
+     line-height: 1;
+     font-size: 20px;
+     color: #53738c;
+    */
+        }
+
+    md-card md-card-content span#ContentInLimo::before {
         content: "info";
     }
 
-    #DescriptionLimo .md-headline#ContentSearchTips::before {
+    md-card md-card-content span#ContentSearchTips::before {
         content: "help";
     }
 
-    #DescriptionLimo .md-headline#LinkToAZDatabaseList::before {
+    md-card md-card-content span#LinkToAZDatabaseList::before {
         content: "view_list";
     }
 
-    #DescriptionLimo .md-headline#ContentTimeTable::before {
-        content: "access_time";
-    }
-
-    #DescriptionLimo .md-headline#ContentKULLOCLink::before {
+    md-card md-card-content span#ContentKULLOCLink::before {
         content: "my_location";
     }
 </style>
 
 
+<md-content layout-xs="column" layout="row" class="display-block-xs">
+    <div flex-xs="100" flex="60" layout="column">
 
-<md-content layout-xs="column" layout="row" class="display-block-xs _md md-primoExplore-theme layout-xs-column layout-row">
-    <div flex-xs="100" flex="60" layout="column" class="layout-column flex-xs-100 flex-60" id="DescriptionLimo">
-        <md-card class="default-card _md md-primoExplore-theme" prm-text="" dir="auto">
-            <md-card-title>
-                <md-card-title-text>
+        <md-card class="default-card _md md-primoExplore-theme" id="ContentKULLOCLink">
+            <md-card-content>
+                <a href="https://www.vives.be/info-over-limo" target="_blank" id="limo_content_link" aria-label="Link to info about content in Limo"
+                   title="Link to info about content in Limo">
                     <span class="md-headline" id="ContentInLimo">
-                        <a href="https://bib.kuleuven.be/english/ub/searching/collections/index" target="_blank" id="limo_content_link">
-                            What can you find in Limo?
-                        </a>
+                        What can you find in Limo?
                     </span>
-                </md-card-title-text>
-            </md-card-title>
-            <md-card-title>
-                <md-card-title-text>
-                    <span class="md-headline" id="ContentSearchTips">
-                        <a title="show Search Tips" href="PleaseEnableJavascript.html" class="searchtipslink">
-                            Search Tips
+                </a>
+                <br />
+                <!--
+                You can find printed and electronic publications
+                <ul>
+                    <li>held in the <strong>Odisee Brussel</strong> and other LIBISnet libraries</li>
+                    <li>
+                        contained in
+                        <a id="limo_content_link" target="blank" href="https://associatie.kuleuven.be/diensten/bibliotheken/pci/hub-kaho-inhoud-primocentral-prd.pdf">
+                            scientific and scholarly databases and e-journal collections licensed by Odisee
                         </a>
-                    </span>
-                </md-card-title-text>
-            </md-card-title>
-            <md-card-content>
-            </md-card-content>
-        </md-card>
+                        or freely available
+                    </li>
+                </ul>
+                    -->
 
-        <md-card class="default-card _md md-primoExplore-theme" prm-text="" dir="auto">
-            <md-card-title>
-                <md-card-title-text>
+                <prm-searchtips parent-Ctrl='$ctrl'></prm-searchtips>
+
+
+                <!--
+                <a aria-label="Link to A-Z databaselist"
+                   title="Link to A-Z databaselist"
+                   href="/primo_library/libweb/action/search.do?srt=title&amp;dscnt=0&amp;frbg=&amp;scp.scps='+ db_scope +'&amp;tab=db_tab&amp;ct=search&amp;mode=Basic&amp;&amp;dum=true&amp;tb=t&amp;indx=1&amp;vl(freeText0)=database&amp;&amp;fn=search&amp;bulkSize=200"
+                  >
                     <span class="md-headline" id="LinkToAZDatabaseList">
-                        <a href="/primo_library/libweb/action/search.do?srt=title&amp;dscnt=0&amp;frbg=&amp;scp.scps='+ db_scope +'&amp;tab=db_tab&amp;ct=search&amp;mode=Basic&amp;&amp;dum=true&amp;tb=t&amp;indx=1&amp;vl(freeText0)=database&amp;&amp;fn=search&amp;bulkSize=200">
-                            A-Z Lijst Databanken
-                        </a>
+                        A-Z databaselist
                     </span>
+                </a>
+                <br />
+                    -->
+            </md-card-content>
+
+        </md-card>
+
+
+
+        <md-card class="default-card _md md-primoExplore-theme" id="ContentKULLOCLink">
+            <md-card-content>
+                <a href="/primo-explore/search?vid=KULeuven_VIVES_KHBO_UX" onclick="document.location.href = 'http://limo.q.libis.be/primo-explore/search?vid=KULeuven_VIVES_KHBO_UX'"><img src="custom/KULeuven_VIVES_KHBO_UX/img/library-logo.png" /></a>
+
+            </md-card-content>
+
+        </md-card>
+
+
+    </div>
+    <div flex-xs="100" flex="40" layout="column">
+
+        <md-card class="default-card" prm-text>
+            <md-card-title>
+                <md-card-title-text>
+                    <span class="md-headline">News</span>
                 </md-card-title-text>
             </md-card-title>
             <md-card-content>
+                <prm-news parent-Ctrl='$ctrl'></prm-news>
             </md-card-content>
         </md-card>
 
 
-        <md-card class="default-card _md md-primoExplore-theme" prm-text="" dir="auto">
-            <md-card-title>
-            </md-card-title>
-            <md-card-content>
-                <div id="KULLOCLinkToKULeuven" style="clear:left">
-                    <img alt="KULeuven VIVES_KATHO logo" src="/primo_library/libweb/libis/VIVES_KATHO/images/kulloc_logo.png" id="kulloc_logo" style="
-                         display:inline-block;
-                         float:left;
-                         margin-right: 0.7em;
-                         vertical-align: middle;" data-hasqtip="4" oldtitle="
-                         Als KU Leuven-student of medewerker op een regionale campus heb je toegangsrecht tot de papieren en elektronische collecties van de Universiteitsbibliotheek, maar heb je ook de fysieke collectie van je campus ter beschikking.
-                         " title="" aria-describedby="qtip-4">
-                </div>
-
-            </md-card-content>
-        </md-card>
     </div>
 </md-content>
+
+
