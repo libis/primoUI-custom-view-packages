@@ -4,13 +4,13 @@
 
 var app = angular.module('viewCustom', ['angularLoad']);
 var feeds = [{
-    feedUrl: "http://limo-libis.blogspot.com/feeds/posts/default" + feedAntiCache,
+    feedUrl: "http://limo-libis.blogspot.com/feeds/posts/default",
     feedLang: ['en_US'],
     feedContentType: 'full',
     feedInst: "LIMO",
     feedFilter: [{ param: "entry.categories", value: "All Views" }, { param: "entry.categories", value: "LUCA" }, { param: "entry.categories", value: "KU Leuven Association" }]
 }, {
-    feedUrl: "http://limo-libis-nl.blogspot.com/feeds/posts/default" + feedAntiCache,
+    feedUrl: "http://limo-libis-nl.blogspot.com/feeds/posts/default",
     feedLang: ['nl_BE'],
     feedContentType: 'full',
     feedInst: "LIMO",

@@ -1,20 +1,38 @@
-
-
-/*Uncomment the follwoing lines to move facets to the left*/
-
-/*
-prm-search > md-content.md-primoExplore-theme .main {
-    display: -webkit-flex; !* Safari *!
-    -webkit-flex-flow: row-reverse wrap; !* Safari 6.1+ *!
-    display: flex;
-    flex-flow: row-reverse wrap;
-
+md-option[value='fr_FR'] {
+    display: none
 }
-.screen-gt-sm .sidebar{
-    webkit-flex: 0 0 15%;
-    flex: 0 0 15%;
+/* prm-static[section='homepage'] */
+prm-search > md-content > prm-static[section='homepage'] .md-headline  {
+   font-size: 1.25rem;
+   text-transform: uppercase;
+   letter-spacing: .05em;
+   line-height: 1.15;
+   font-weight: 700;
 }
 
-*/
+prm-search > md-content > prm-static[section='homepage'] h3  {
+   font-size: 1.25rem;
+   text-transform: uppercase;
+   letter-spacing: .05em;
+   line-height: 1.15;
+   font-weight: 700;
+}
 
 
+
+prm-search > md-content > prm-static[section='homepage'] ul{
+    margin-top:0px;
+}
+
+@media (min-width: 600px) {
+    prm-static[section='homepage']  md-content .flex-60, .layout-row > .flex-60 {
+        min-width: 550px;
+    }
+}
+
+@media (min-width: 600px) {
+    prm-search > md-content > prm-static[section='homepage']  {
+        font-size: 16px;
+        font-size: 1rem;
+    }
+}

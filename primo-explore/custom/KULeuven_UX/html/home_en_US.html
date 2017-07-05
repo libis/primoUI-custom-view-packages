@@ -57,17 +57,17 @@
                     </span>
 
                 </a>
-
+                <br/>
                 <prm-searchtips parent-Ctrl='$ctrl'></prm-searchtips>
 
-
+                <br />
                 <a href="/KULeuven_regio">
                     <span class="md-headline" id="ContentKULLOCLink">
                         Limo on Campus
                     </span>
                 </a>
 
-
+                <br />
                 <div id="select_campus" style="padding:0.3em;
  border-radius: 3px;
  color: #53738c;
@@ -77,9 +77,9 @@
                     <select name="campus" id="campusview" style='padding-top: 0.2em; color: #53738c;' onchange="document.location.href = location.protocol + location.port + '//' + location.host + '/primo-explore/search?sortby=rank&vid=' + this.value;">
                         >
                         <option value="">Select location</option>
-                        <option value="KULeuven_ODISEE_UX">Brussel,Gent en Aalst</option>
+                        <option value="KULeuven_ODISEE_UX">Brussel, Gent en Aalst</option>
                         <option value="KULeuven_LUCA_UX">Sint-Lucas Brussel en Gent</option>
-                        <option value="KULeuven_VIVES_KHBO_UX">Brugge</option>
+                        <!-- <option value="KULeuven_VIVES_KHBO_UX">Brugge</option> -->
                         <option value="KULeuven_UCLL_UX">Diepenbeek</option>
                         <option value="KULeuven_TMOREM_UX">Sint-Katelijne-Waver</option>
                         <option value="KULeuven_TMOREK_UX">Geel</option>
@@ -93,16 +93,8 @@
     </div>
     <div flex-xs="100" flex="40" layout="column">
 
-        <md-card class="default-card" prm-text>
-            <md-card-title>
-                <md-card-title-text>
-                    <span class="md-headline">News</span>
-                </md-card-title-text>
-            </md-card-title>
-            <md-card-content>
+
                 <prm-news parent-Ctrl='$ctrl'></prm-news>
-            </md-card-content>
-        </md-card>
 
 
     </div>

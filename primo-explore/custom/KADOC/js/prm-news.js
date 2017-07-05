@@ -1,6 +1,6 @@
 var feeds = [
                    {
-                       feedUrl: "http://kadoc.kuleuven.be/actueel/nieuwsberichten/kadoc-nieuwsberichten/RSS" + feedAntiCache,
+                       feedUrl: "http://kadoc.kuleuven.be/actueel/nieuwsberichten/kadoc-nieuwsberichten/RSS",
                        feedLang: ['nl_BE', 'en_US'],
                        feedContentType: 'full',
                        feedInst: "KADOC",
@@ -39,9 +39,9 @@ app.controller("prmNewsController", ['$scope', '$http', 'FeedService', function 
 
     /* set title for locale to '' to hide Title */
     var title = {
-        'nl_BE': 'Nieuws',
-        'en_US': 'News',
-        'fr_FR': 'Nouvelles',
+        'nl_BE': '',
+        'en_US': '',
+        'fr_FR': '',
     }
 
     $scope.title = title[locale];

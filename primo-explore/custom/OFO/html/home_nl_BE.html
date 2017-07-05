@@ -1,0 +1,82 @@
+﻿<style>
+    @import url(https://fonts.googleapis.com/icon?family=Material+Icons );
+
+    md-card md-card-content span.md-headline {
+        line-height: 2em;
+    }
+
+        md-card md-card-content span.md-headline::before {
+            font-family: 'Material Icons';
+            font-weight: normal;
+            font-style: normal;
+            letter-spacing: normal;
+            text-transform: none;
+            display: inline-block;
+            white-space: nowrap;
+            word-wrap: normal;
+            direction: ltr;
+            font-feature-settings: 'liga';
+            -webkit-font-feature-settings: 'liga';
+            -webkit-font-smoothing: antialiased;
+            margin-right: 2px;
+            vertical-align: middle;
+            /*
+     line-height: 1;
+     font-size: 20px;
+     color: #53738c;
+    */
+        }
+
+    md-card md-card-content span#ContentInLimo::before {
+        content: "info";
+    }
+
+    md-card md-card-content span#ContentSearchTips::before {
+        content: "help";
+    }
+
+    md-card md-card-content span#ContentKULLOCLink::before {
+        content: "my_location";
+    }
+
+    LinkToAZDatabaseList
+</style>
+<md-card class="default-card _md md-primoExplore-theme" id="ContentKULLOCLink">
+    <md-card-content>
+            <span class="md-headline" id="ContentInLimo">
+                Wat vind je in Limo?
+            </span>
+        <br />
+        <p>
+            Het Studie- en Documentatiecentrum van de Federale Overheidsdienst Personeel en Organisatie (FOD P&O) is één van de Belgische federale bibliotheken. Het Studie- en Documentatiecentrum P&O, beheerd door het Opleidingsinstituut van de Federale Overheid (OFO), biedt een eenvoudige toegang tot informatie via publicaties en multimediadragers. Het stelt zo'n 12.000 referentiewerken en een honderdtal tijdschriften ter beschikking in de volgende domeinen:
+            <ul>
+                <li>
+                    bestuurskunde
+                </li>
+                <li>
+                    sociale wetenschappen
+                </li>
+                <li>
+                    management en human resources
+                </li>
+                <li>
+                    projectmanagement, kwaliteit, kennismanagement, conflictmanagement, professionele en persoonlijke ontwikkeling
+                </li>
+                <li>
+                    communicatie
+                </li>
+                <li>
+                    leren van talen en informatica
+                    'Leren en Ontwikkelen': didactiek, coaching, teambeheer,
+                </li>
+            </ul>
+        </p>
+        <br />
+        <prm-searchtips parent-Ctrl='$ctrl'></prm-searchtips>
+
+    </md-card-content>
+
+</md-card>
+
+<prm-news parent-Ctrl='$ctrl'></prm-news>
+

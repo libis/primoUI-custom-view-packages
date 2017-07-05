@@ -1,0 +1,71 @@
+﻿<style>
+    @import url(https://fonts.googleapis.com/icon?family=Material+Icons );
+
+    md-card md-card-content span.md-headline {
+        line-height: 2em;
+    }
+
+        md-card md-card-content span.md-headline::before {
+            font-family: 'Material Icons';
+            font-weight: normal;
+            font-style: normal;
+            letter-spacing: normal;
+            text-transform: none;
+            display: inline-block;
+            white-space: nowrap;
+            word-wrap: normal;
+            direction: ltr;
+            font-feature-settings: 'liga';
+            -webkit-font-feature-settings: 'liga';
+            -webkit-font-smoothing: antialiased;
+            margin-right: 2px;
+            vertical-align: middle;
+            /*
+     line-height: 1;
+     font-size: 20px;
+     color: #53738c;
+    */
+        }
+
+    md-card md-card-content span#ContentInLimo::before {
+        content: "info";
+    }
+
+    md-card md-card-content span#ContentSearchTips::before {
+        content: "help";
+    }
+
+    md-card md-card-content span#ContentKULLOCLink::before {
+        content: "my_location";
+    }
+
+    LinkToAZDatabaseList
+</style>
+<md-card class="default-card _md md-primoExplore-theme" id="ContentKULLOCLink">
+    <md-card-content>
+        <span class="md-headline" id="ContentInLimo">
+            Quelles sont les collections que Limo met à votre disposition ?
+        </span>
+        <br />
+        <p>
+            Le Centre d'Etude et de Documentation du service public f&eacute;d&eacute;ral Personnel et Organisation (SPF P&amp;O) est l'une des biblioth&egrave;ques f&eacute;d&eacute;rales belges. G&eacute;r&eacute; par l'Institut de Formation de l'Administration f&eacute;d&eacute;rale (IFA), le Centre d'Etude et de Documentation P&amp;O offre un acc&egrave;s ais&eacute; &agrave; l'information par le biais de publications et de supports multim&eacute;dias. Il met &agrave; disposition quelque 12.000 ouvrages de r&eacute;f&eacute;rence et une centaine de revues dans les domaines suivants :
+            <ul>
+                <li>mati&egrave;res administratives</li>
+                <li>sciences sociales</li>
+                <li>management et gestion des ressources humaines</li>
+                <li>gestion de projet, qualit&eacute;, gestion des connaissances, gestion de conflits, d&eacute;veloppement professionnel et personnel</li>
+                <li>communication</li>
+                <li> apprentissage des langues et de l'informatique</li>
+                <li>'Apprendre et D&eacute;velopper' : didactique, coaching, gestion d'&eacute;quipe,</li>
+            </ul>
+
+        </p>
+        <br />
+        <prm-searchtips parent-Ctrl='$ctrl'></prm-searchtips>
+
+    </md-card-content>
+
+ 
+</md-card>
+
+<prm-news parent-Ctrl='$ctrl'></prm-news>

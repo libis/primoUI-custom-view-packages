@@ -4,26 +4,26 @@
 
 var app = angular.module('viewCustom', ['angularLoad']);
 var feeds = [{
-    feedUrl: "http://khbobibliotheken.wordpress.com/feed/" + feedAntiCache,
+    feedUrl: "http://khbobibliotheken.wordpress.com/feed/",
     feedLang: ['nl_BE', 'en_US'],
     feedContentType: 'snippet',
     feedInst: "KHBO",
     feedFilter: []
 }, {
-    feedUrl: "https://kathoko.wordpress.com/feed/" + feedAntiCache,
+    feedUrl: "https://kathoko.wordpress.com/feed/",
     feedLang: ['nl_BE', 'en_US'],
     feedContentType: 'snippet',
     feedInst: "KATHO",
     feedFilter: [{ param: "entry.categories", value: "limo" }, { param: "entry.categories", value: "e-bronnen" }]
 }, {
-    feedUrl: "http://limo-libis.blogspot.com/feeds/posts/default" + feedAntiCache,
+    feedUrl: "http://limo-libis.blogspot.com/feeds/posts/default",
     feedLang: ['en_US'],
     feedContentType: 'full',
     feedInst: "LIMO",
     feedFilter: [{ param: "entry.categories", value: "All Views" }, { param: "entry.categories", value: "VIVES" }, { param: "entry.categories", value: "KU Leuven Association" }]
 
 }, {
-    feedUrl: "http://limo-libis-nl.blogspot.com/feeds/posts/default" + feedAntiCache,
+    feedUrl: "http://limo-libis-nl.blogspot.com/feeds/posts/default",
     feedLang: ['nl_BE'],
     feedContentType: 'full',
     feedInst: "LIMO",
