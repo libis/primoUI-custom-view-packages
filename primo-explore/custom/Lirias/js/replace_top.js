@@ -8,7 +8,6 @@ app.component('prmTopBarBefore', {
     bindings: { parentCtrl: '<' },
     controller: 'prmLogoAfterController',
     template: `
-
 <prm-skip-to></prm-skip-to>
 
 <div class ="top-nav-bar layout-row" layout="row" tabindex="0" role="navigation">
@@ -67,7 +66,6 @@ app.component('prmTopBarBefore', {
                                 <a href="http://www.kuleuven.be/sapredir/kuloket">KU&nbsp; Loket</a>
                             </md-menu-item>
                             <md-menu-item class ="md-indent">
-
                                 <a href="https://webmail.kuleuven.be/">Webmail</a>
                             </md-menu-item>
                             <md-menu-item class ="md-indent">
