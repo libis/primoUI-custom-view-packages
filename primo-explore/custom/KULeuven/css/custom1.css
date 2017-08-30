@@ -1,3 +1,6 @@
+md-option[value='fr_FR'] {
+    display: none
+}
 /* view color hook */
 /* ---------------- */
 .md-button[aria-label=Search] {

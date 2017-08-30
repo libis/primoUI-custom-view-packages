@@ -8,20 +8,7 @@ app.component('prmAuthenticationAfter', {
 app.component('prmPromoteLogin', {
     bindings: { parentCtrl: '<' },
     controller: 'prmPromoteLoginController',
-    template: `
-      <md-card ng-hide="!feedresults.length" class ="default-card _md md-primoExplore-theme">
-        <md-card-content>
-         <h1 ng-hide="!feedresults.length || title==='' ">{{title}}</h1>
-         <md-list>
-         <md-list-item ng-repeat="feed in feedresults | limitTo: maxfeeds">
-         <div class ="md-list-item-text"> <a href="{{ feed.link }}" target="_news">{{ feed.title }}</a>
-            <div class ="blogheaderbody">{{ feed.contentSnippet }}</div>
-         </div>
-         </md-list-item>
-         </md-list>
-        </md-card-content>
-      </md-card>
-`
+    template: '',
 });
 
 app.controller("prmPromoteLoginController", ['$scope', '$http', '$mdDialog', '$cookies', function ($scope, $http, $mdDialog, $cookies) {
@@ -76,9 +63,8 @@ app.controller("prmPromoteLoginController", ['$scope', '$http', '$mdDialog', '$c
         $scope.changePromoteOption = function () {
             if ($scope.primoPromoteLogin === 'neverSignin' || $scope.primoPromoteLogin === 'alwaysSignin') {
                 localStorage.setItem('primoPromoteLogin', $scope.primoPromoteLogin);
-
             } else {
-                localStorage.remove('primoPromoteLogin');
+                localStorage.removeItem('primoPromoteLogin');
                 //sessionStorage.setItem('primoPromoteLogin', $scope.primoPromoteLogin);
             }
         };
@@ -90,12 +76,9 @@ app.controller("prmPromoteLoginController", ['$scope', '$http', '$mdDialog', '$c
              self.parentCtrl.loginService.handleLoginClick()
         } else {
             if ( ! sessionStorage['primoPromoteLogin'] && ! localStorage['primoPromoteLogin'] ) {
-               
                 $scope.showSignInPopup();
                 sessionStorage.setItem('primoPromoteLogin', 'SignInPopup');
             }
         }
     }
-
-
 }]);
