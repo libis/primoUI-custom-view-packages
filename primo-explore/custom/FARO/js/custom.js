@@ -2,6 +2,7 @@
 "use strict";
 'use strict';
 
+var app = angular.module('viewCustom', ['angularLoad']);
 var feeds = [{
     feedUrl: "http://www.faronet.be/blog/382/feed",
     feedLang: ['nl_BE'],
