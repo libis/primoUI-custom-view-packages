@@ -3,32 +3,6 @@
 'use strict';
 
 var app = angular.module('viewCustom', ['angularLoad']);
-app.component('prmAuthenticationAfter', {
-    bindings: { parentCtrl: '<' },
-    controller: 'prmPromoteLoginController',
-    template: ''
-});
-
-app.component('prmPromoteLogin', {
-    bindings: { parentCtrl: '<' },
-    controller: 'prmPromoteLoginController',
-    template: ''
-});
-
-app.controller("prmPromoteLoginController", ['$scope', '$http', '$mdDialog', '$cookies', function ($scope, $http, $mdDialog, $cookies) {
-    var self = this;
-    var locale = self.parentCtrl.primolyticsService.userSessionManagerService.i18nService.getLanguage();
-    var vid = window.appConfig['vid'];
-
-    if (!self.parentCtrl.isLoggedIn) {
-        /* Redirect to Login With institution=KULeuven */
-        var auth = window.appConfig.authentication[0];
-        var loginUrl = self.parentCtrl.loginService.loginUrl(auth['profile-name'], auth['authentication-system']);
-        loginUrl = loginUrl.replace(/institution=([^&])*/, "institution=KUL");
-        document.location.href = loginUrl;
-    }
-}]);
-
 var feeds = [{
     feedUrl: "http://bib.kuleuven.be/english/ub/news/limo-news/rss",
     feedLang: ['en_US'],
@@ -185,4 +159,29 @@ app.component('prmFullViewAfterAltmetrics', {
                     */
     template: '\n                                <div class="section-body" layout="row" layout-align="center center">\n                                    <div class="spaced-rows" layout="column">\n                                        <div ng-if="$ctrl.doi" class="altmetric-embed" data-badge-type="medium-donut" data-badge-details="right" data-doi="{{$ctrl.doi}}">\n                                        </div>\n                                    </div>\n                                </div>\n               '
 });
+
+
+
+app.component('prmHome', {
+    bindings: { parentCtrl: '<' },
+    controller: 'prmHomeController',
+    template: `
+        <div flex="0" flex-md="0" flex-lg="10" flex-xl="20" 
+           ng-class="{\'facet-to-left-spacer\': $ctrl.facetToLeft &amp;&amp; !$ctrl.mediaQueries.xl &amp;&amp; !$ctrl.mediaQueries.md &amp;&amp; !$ctrl.mediaQueries.sm &amp;&amp; !$ctrl.mediaQueries.xs, \'flex-xl-25\': $ctrl.facetToLeft}" 
+            class="flex-xl-20 flex-md-0 flex-lg-10 flex-0 facet-to-left-spacer flex-xl-25">HMOEM OMEOMEOEMO</div>
+            `
+});
+
+app.controller("prmHomeController", ['$scope', '$http', 'FeedService', function ($scope, $http, FeedService) {
+    var self = this;
+    var locale = self.parentCtrl.staticService.userSessionManagerService.i18nService.getLanguage();
+    var vid = window.appConfig['vid'];
+    console.log(self)
+    var homepagedivs = document.querySelectorAll("md-content > div");
+    //nsole.log( '.mediaQueries.lg: ' +    angular.element(homepagedivs[0]).scope().$ctrl.mediaQueries.lg )
+    console.log( angular.element(homepagedivs[0]) )
+
+}]);
+
+
 })();

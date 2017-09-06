@@ -511,9 +511,6 @@ md-toolbar.default-toolbar:not(.md-menu-toolbar) {
   color: #44707b; }
 
 /* primary color hook end*/
-md-option[value='fr_FR'] {
-    display: none
-}
 /* view color hook */
 /* ---------------- */
 .md-button[aria-label=Search] {
