@@ -1,0 +1,45 @@
+
+
+prm-topbar .md-button a,
+prm-topbar .md-button a:link,
+prm-topbar .md-button a:visited
+prm-topbar .md-button a:active
+ {
+    color: hsla(0,0%,100%,.65);
+}
+
+prm-topbar .md-button a:hover
+ {
+    color: hsla(0,0%,100%,1);
+}
+prm-topbar > div.top-nav-bar prm-main-menu,
+prm-topbar > div.top-nav-bar prm-logo-after,
+prm-topbar > div.top-nav-bar prm-search-bookmark-filter,
+prm-topbar > div.top-nav-bar prm-user-area
+{
+    display: none
+}
+
+prm-topbar prm-logo {
+    height: 100%;
+    width: auto;
+}
+
+@media (max-width: 1279px) and (min-width: 960px){
+    prm-topbar prm-logo {
+    height: 150%;
+    width: auto;
+    }
+}
+
+@media (min-width: 1280px) {
+    prm-topbar prm-logo {
+        height: 280%;
+        width: auto;
+    }
+}
+
+
+div.pin-button {
+    display: none
+}
