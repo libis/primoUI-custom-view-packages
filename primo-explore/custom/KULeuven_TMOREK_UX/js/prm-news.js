@@ -1,7 +1,7 @@
 
 var feeds = [
         {
-            feedUrl: "http://bib.kuleuven.be/english/ub/news/limo-news/rss",
+            feedUrl: "https://bib.kuleuven.be/english/ub/news/limo-news/rss",
             feedLang: ['en_US'],
             feedContentType: 'title',
             feedInst: "KU Leuven",
@@ -15,7 +15,7 @@ var feeds = [
             feedFilter: []
         },
         {
-            feedUrl: "http://limo-libis.blogspot.com/feeds/posts/default",
+            feedUrl: "https://limo-libis.blogspot.com/feeds/posts/default",
             feedLang: ['en_US'],
             feedContentType: 'title',
             feedInst: "LIMO",
@@ -27,7 +27,7 @@ var feeds = [
             ]
         },
         {
-            feedUrl: "http://limo-libis-nl.blogspot.com/feeds/posts/default",
+            feedUrl: "https://limo-libis-nl.blogspot.com/feeds/posts/default",
             feedLang: ['nl_BE'],
             feedContentType: 'title',
             feedInst: "LIMO",

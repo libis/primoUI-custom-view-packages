@@ -1,6 +1,6 @@
 var feeds = [
         {
-            feedUrl: "http://khbobibliotheken.wordpress.com/feed/",
+            feedUrl: "https://khbobibliotheken.wordpress.com/feed/",
             feedLang: ['nl_BE', 'en_US'],
             feedContentType: 'snippet',
             feedInst: "KHBO",
@@ -19,7 +19,7 @@ var feeds = [
             ]
         },
         {
-            feedUrl: "http://limo-libis.blogspot.com/feeds/posts/default",
+            feedUrl: "https://limo-libis.blogspot.com/feeds/posts/default",
             feedLang: ['en_US'],
             feedContentType: 'full',
             feedInst: "LIMO",
@@ -31,7 +31,7 @@ var feeds = [
 
         },
         {
-            feedUrl: "http://limo-libis-nl.blogspot.com/feeds/posts/default",
+            feedUrl: "https://limo-libis-nl.blogspot.com/feeds/posts/default",
             feedLang: ['nl_BE'],
             feedContentType: 'full',
             feedInst: "LIMO",

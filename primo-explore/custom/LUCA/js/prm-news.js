@@ -1,6 +1,6 @@
 var feeds = [
         {
-            feedUrl: "http://limo-libis.blogspot.com/feeds/posts/default",
+            feedUrl: "https://limo-libis.blogspot.com/feeds/posts/default",
             feedLang: ['en_US'],
             feedContentType: 'full',
             feedInst: "LIMO",
@@ -11,7 +11,7 @@ var feeds = [
 
         },
         {
-            feedUrl: "http://limo-libis-nl.blogspot.com/feeds/posts/default",
+            feedUrl: "https://limo-libis-nl.blogspot.com/feeds/posts/default",
             feedLang: ['nl_BE'],
             feedContentType: 'full',
             feedInst: "LIMO",
