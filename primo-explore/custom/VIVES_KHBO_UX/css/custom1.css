@@ -13,6 +13,9 @@ prm-action-list ul._md-nav-bar-list li[name="EasyBib"]
 }
 
 
+md-option[value='fr_FR'] {
+    display: none
+}
 add-pnx-xml {
     z-index: 15;
     position: absolute;

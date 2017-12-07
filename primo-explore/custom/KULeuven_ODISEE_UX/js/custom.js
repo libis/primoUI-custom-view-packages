@@ -48,13 +48,13 @@ var feeds = [{
     feedInst: "KU Leuven",
     feedFilter: []
 }, {
-    feedUrl: "http://limo-libis.blogspot.com/feeds/posts/default",
+    feedUrl: "https://limo-libis.blogspot.com/feeds/posts/default",
     feedLang: ['en_US'],
     feedContentType: 'title',
     feedInst: "LIMO",
     feedFilter: [{ param: "entry.categories", value: "All Views" }, { param: "entry.categories", value: "Odisee" }, { param: "entry.categories", value: "KULeuven" }, { param: "entry.categories", value: "KU Leuven Association" }]
 }, {
-    feedUrl: "http://limo-libis-nl.blogspot.com/feeds/posts/default",
+    feedUrl: "https://limo-libis-nl.blogspot.com/feeds/posts/default",
     feedLang: ['nl_BE'],
     feedContentType: 'title',
     feedInst: "LIMO",

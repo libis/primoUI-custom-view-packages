@@ -4,7 +4,7 @@
 
 var app = angular.module('viewCustom', ['angularLoad']);
 var feeds = [{
-    feedUrl: "http://kadoc.kuleuven.be/actueel/nieuwsberichten/kadoc-nieuwsberichten/RSS",
+    feedUrl: "https://kadoc.kuleuven.be/actueel/nieuwsberichten/kadoc-nieuwsberichten/RSS",
     feedLang: ['nl_BE', 'en_US'],
     feedContentType: 'full',
     feedInst: "KADOC",
