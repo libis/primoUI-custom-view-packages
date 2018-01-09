@@ -39,7 +39,11 @@ prm-topbar prm-logo {
     }
 }
 
-
 div.pin-button {
+    display: none
+}
+
+/* remove link to advanced search */
+div.search-switch-buttons {
     display: none
 }
