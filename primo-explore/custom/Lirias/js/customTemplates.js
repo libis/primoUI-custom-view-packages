@@ -1,0 +1,2 @@
+angular.module('viewCustom').run(['$templateCache', function($templateCache) {$templateCache.put('footer_en_US.html','\r\n<h1>Lirias</h1>\r\n');
+$templateCache.put('footer_nl_BE.html','\r\n        <h1>Lirias</h1>\r\n');}]);

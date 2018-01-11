@@ -1,0 +1,24 @@
+<ul class="pagination language">
+    <li class="pagination__item">
+        <a class="pagination__btn active" href="" ng-class="{'active':$parent.activeLanguage=='nl'}" 
+        ng-click="changeLanguage('nl')">NL</a>
+    </li>
+    <li class="pagination__item">
+        <a class="pagination__btn" href="" ng-class="{'active':$parent.activeLanguage=='en'}"
+         ng-click="changeLanguage('en')">EN</a>
+    </li>
+    -----   
+    <div ng-if="::($ctrl.getLabelType() == \'text\')"></div>
+        <span translate="nui.mypref.label.interface_languages"></span>
+    </div>
+    ------------
+    <li class="pagination__item">
+        <a class="pagination__btn" href="" ng-class="{'active':$parent.activeLanguage=='en'}"
+         ng-click="changeLanguage('en')">FR</a>
+
+         
+    </li>
+    ------
+</ul>
+
+
