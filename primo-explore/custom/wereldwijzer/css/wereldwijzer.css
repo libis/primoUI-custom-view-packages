@@ -1,0 +1,62 @@
+prm-topbar .top-nav-bar {
+    background-color:#fff;
+    color:#a64d94;
+ }
+
+prm-logo a:hover {
+    background: none;
+    box-shadow: none;
+}
+
+prm-user-area {
+      background-color:#fff;
+}
+
+prm-search-bookmark-filter #favorites-button {
+    color: #fff;
+    background-color: #a64d94;
+}
+
+beta-switch div#beta-switch > span[data-ribbon] {
+    background-color: #a64d94;
+}
+
+
+prm-topbar  .md-button.button-over-dark:hover:not([disabled]),
+prm-topbar div#home-buttons-holder .md-button:hover:not([disabled]),
+prm-topbar div[id='main menu'] .md-button:hover:not([disabled]),
+prm-topbar .md-button:hover:not([disabled]),
+prm-user-area .md-button.user-menu-button:hover:not([disabled]) {
+     color:#a64d94;
+}
+
+prm-topbar  .md-button.button-over-dark,
+prm-topbar div#home-buttons-holder .md-button, 
+prm-topbar div[id='main menu']  .md-button, 
+prm-topbar .md-button, 
+prm-user-area .md-button.user-menu-button {
+    color:#a64d94;
+}
+
+
+prm-user-area md-fab-toolbar ._md-fab-action-item .md-button, prm-user-area md-fab-toolbar ._md-fab-action-item md-input-container,
+prm-user-area md-fab-toolbar .md-fab-action-item .md-button, prm-user-area md-fab-toolbar .md-fab-action-item md-input-container {
+   color:#a64d94;
+}
+
+prm-user-area .user-menu-button .user-name {
+    color:#a64d94;
+    text-decoration:underline;
+    border-bottom: none;
+}
+
+prm-topbar #changUserStatus  span.user-language,
+prm-change-lang,
+prm-main-menu {
+    display:none;
+}
+
+
+div#footer {
+    background-color: #a64d94;
+}

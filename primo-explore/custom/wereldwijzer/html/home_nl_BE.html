@@ -1,0 +1,148 @@
+<style>
+    @import url(https://fonts.googleapis.com/icon?family=Material+Icons );
+    @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
+    md-card md-card-content span.md-headline {
+        line-height: 2em;
+    }
+
+        md-card md-card-content span.md-headline::before {
+            font-family: 'Material Icons';
+            font-weight: normal;
+            font-style: normal;
+            letter-spacing: normal;
+            text-transform: none;
+            display: inline-block;
+            white-space: nowrap;
+            word-wrap: normal;
+            direction: ltr;
+            font-feature-settings: 'liga';
+            -webkit-font-feature-settings: 'liga';
+            -webkit-font-smoothing: antialiased;
+            margin-right: 2px;
+            vertical-align: middle;
+            /*
+     line-height: 1;
+     font-size: 20px;
+     color: #53738c;
+    */
+        }
+
+    ul#timetable {
+        display:inline-block; 
+        background: url(custom/wereldwijzer/img/foto.jpg) no-repeat left center;
+        background-size: 180px;
+        padding-left: 190px;     
+        list-style-type: none 
+    }
+
+
+    @media (max-width: 1080px) {
+        md-content > prm-static.flex {
+            flex : 1 1 100%;
+        }
+        ul#timetable {
+            background: none;
+            padding-left: 0;
+        }
+    }
+
+
+
+    md-content > prm-static.flex {
+        flex : 0 0 100%;
+    }
+
+    md-card md-card-content span#heading{
+        color:#a64d94;
+        font-weight: bold;
+    }
+
+    md-card md-card-content span#Lidmaatschap::before {
+        content: "credit_card";
+    }
+
+    md-card md-card-content span#Contact::before {
+        content: "contacts";
+    }
+
+    md-card md-card-content span#Meer::before {
+        content: "info";
+    }
+    
+</style>
+
+
+<md-content layout-xs="column" layout="row" class="display-block-xs">
+    <div flex-xs="100" flex="60" layout="column">
+
+<md-card class="default-card _md md-primoExplore-theme">
+    <md-card-content>
+            <span class="md-headline" id="heading">
+                Documentatiecentrum Wereldwijzer
+                <span style="font-size:0.8em">Provincie Vlaams-Brabant</span>
+            </span>
+        <br />
+        <p>
+Wereldwijzer is het documentatiecentrum van Kleur Bekennen in de provincie Vlaams-Brabant. 
+Zoek je lespakketten of boeken om met je klas of school te werken rond wereldburgerschap of diversiteit?
+Of wil je via educatieve spelmaterialen de wereld binnen de schoolmuren brengen? Dan ben je bij het Documentatiecentrum Wereldwijzer aan het juiste adres! 
+        </p>
+<span class="md-headline" id="Lidmaatschap">Lidmaatschap</span>
+<p>
+Alle leerkrachten woonachtig, werkzaam of in opleiding in de provincie Vlaams-Brabant kunnen <strong>gratis lid</strong> worden. 
+Je kunt enkel materialen ontlenen als je lid bent en Kleur Bekennen klanten kunnen enkel materialen uit de <strong>Kleur Bekennen collectie</strong> ontlenen. 
+Voor het aanmaken van je lidmaatschap hebben wij je Lerarenkaart nodig. 
+<strong>Uitleenbare materialen</strong> zijn in principe voor <strong>3 weken</strong> te ontlenen. Ze kunnen maximum 2x online verlengd worden (via Limo). De boete bedraagt 10 cent per boek per dag. 
+</p>
+<span class="md-headline" id="Contact">Contact</span>
+<p>
+Voor een afspraak of bijkomende info kan je mailen naar <a href="mailto:kleurbekennen@vlaamsbrabant.be">kleurbekennen@vlaamsbrabant.be</a> of bellen op 016/26 74 01 
+</p>
+<span class="md-headline" id="Meer">Meer weten?</span>
+<p>
+Kijk op <a href="http://www.kleurbekennen.be">http://www.kleurbekennen.be</a> of bezoek onze blog met digitale inspiratie 
+</p>
+
+</md-card-content>
+
+</md-card>
+    </div>
+    <div flex-xs="100" flex="40" layout="column">
+
+        <md-card class="default-card _md md-primoExplore-theme">
+            <md-card-content>
+                    <span class="md-headline" id="heading">
+                        Openingsuren
+                    </span>
+                    <br/>
+
+
+                         <ul id="timetable">
+                        <li>maandag: van 8u tot 18u</li>
+                        <li>dinsdag: van 8u tot 18u</li>
+                        <li>woensdag: van 8u tot 20u </li>
+                        <li>donderdag: van 8u tot 18u</li>
+                        <li>vrijdag: van 8u tot 18u</li>
+                        </ul>
+                       <!--
+                        <img src="custom/wereldwijzer/img/foto.jpg" style="max-height: 7em; display:inline-block" />
+                       -->
+
+                    </p>
+                Bij Wereldwijzer loop je zonder afspraak binnen om het aanbod aan boeken, 
+                leermiddelen en spelmateriaal te verkennen en te ontlenen. 
+                Kom je met een groep of wens je een rondleiding? 
+                Dan maak je best een afspraak, zodat onze educatieve medewerkers je met raad en daad kunnen bijstaan. 
+
+                <p>
+
+
+
+           </md-card-content>
+
+        </md-card>
+
+
+    </div>
+</md-content>
