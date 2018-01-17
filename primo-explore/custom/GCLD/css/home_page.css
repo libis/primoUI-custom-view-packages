@@ -1,0 +1,6 @@
+
+@media (min-width: 1280px) {
+    md-content > prm-static.flex {
+        flex : 0 0 80%;
+    }
+}

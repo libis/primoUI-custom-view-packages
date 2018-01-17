@@ -1,0 +1,6 @@
+
+prm-topbar > div.top-nav-bar prm-logo-after,
+prm-topbar > div.top-nav-bar prm-user-area
+{
+    display: none
+}
