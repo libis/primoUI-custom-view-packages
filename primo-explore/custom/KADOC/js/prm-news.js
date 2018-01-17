@@ -1,14 +1,19 @@
 var feeds = [
                    {
                        feedUrl: "https://kadoc.kuleuven.be/actueel/nieuwsberichten/kadoc-nieuwsberichten/RSS",
-                       feedLang: ['nl_BE', 'en_US'],
+                       feedLang: ['nl_BE'],
                        feedContentType: 'full',
                        feedInst: "KADOC",
                        feedFilter: []
                    },
-
-    ];
-
+                   {
+                    feedUrl: "https://kadoc.kuleuven.be/english/Current/news/kadoc-news/rss",
+                    feedLang: ['en_US'],
+                    feedContentType: 'full',
+                    feedInst: "KADOC",
+                    feedFilter: []
+                }
+            ]
 
 app.component('prmNews', {
     bindings: { parentCtrl: '<' },
