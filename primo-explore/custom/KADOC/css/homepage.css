@@ -13,8 +13,8 @@ prm-search > md-content > prm-static[section='homepage'] h3  {
    letter-spacing: .05em;
    line-height: 1.15;
    font-weight: 700;
+   text-align: center;
 }
-
 
 
 prm-search > md-content > prm-static[section='homepage'] ul{
@@ -33,3 +33,20 @@ prm-search > md-content > prm-static[section='homepage'] ul{
         font-size: 1rem;
     }
 }
+
+@media (max-width: 1080px) {
+    md-content > prm-static.flex {
+        flex : 1 1 100%;
+    }
+}
+
+md-content > prm-static.flex {
+    flex : 0 0 100%;
+    max-width: 1500px;
+}
+
+
+prm-search > md-content > prm-static >  md-content > div > img {
+    margin: 8px;
+}
+
