@@ -100,6 +100,9 @@ prm-search-bookmark-filter #favorites-button {
     background-color: #0053A0;
 }
 
+#beta-switch {
+    margin-left: 1em;
+}
 
 
 prm-topbar  .md-button.button-over-dark:hover:not([disabled]),
@@ -134,3 +137,17 @@ prm-user-area prm-authentication {
     margin: 14px 0;
 }
 */
+
+prm-linked-user-selector-after div#prmLinkedUserSelectorAfter {
+    margin-left: 1em;
+}
+
+prm-linked-user-selector-after div#prmLinkedUserSelectorAfter button#sign_out_button.md-button{
+    background-color: #226091;
+    color: #fff;
+    font-weight: 600;
+}
+
+prm-topbar prm-user-area > button.user-menu-button.md-button {
+    display: none
+}

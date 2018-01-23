@@ -1,5 +1,3 @@
-
-
 prm-topbar .md-button a,
 prm-topbar .md-button a:link,
 prm-topbar .md-button a:visited
@@ -9,9 +7,10 @@ prm-topbar .md-button a:active
 }
 
 prm-topbar .md-button a:hover
- {
+{
     color: hsla(0,0%,100%,1);
 }
+
 prm-topbar > div.top-nav-bar prm-main-menu,
 prm-topbar > div.top-nav-bar prm-logo-after,
 prm-topbar > div.top-nav-bar prm-search-bookmark-filter,
