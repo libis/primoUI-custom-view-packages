@@ -645,7 +645,24 @@ prm-linked-user-selector-after div#prmLinkedUserSelectorAfter button#sign_out_bu
     color: #fff;
     font-weight: 600;
 }
+/*
+div#fixed-buttons-holder prm-icon md-icon svg {
+    color:pink;
+}
+*/
+prm-search-bookmark-filter div#fixed-buttons-holder.fixed-to-top  #favorites-button{
+    background-color: rgba(58,58,58,.12)
+}
 
+prm-topbar prm-user-area > button.mobile-menu-button.md-button ,
 prm-topbar prm-user-area > button.user-menu-button.md-button {
     display: none
 }
+
+
+
+div#library_card_button_not_signed_in {
+    height: 100%;
+    margin-right: .5em;
+}
+

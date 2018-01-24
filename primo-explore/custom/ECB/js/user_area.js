@@ -17,7 +17,8 @@ app.controller('prmLinkedUserSelectorAfter', ['$element', '$scope', '$location',
         var vid = scope.$parent.$parent.$ctrl.vid
         
         $scope.signOut = function () {
-            document.location.href = "https://leuven-primo.hosted.exlibrisgroup.com/pds?func=logout&calling_system=primo&institute=ECB&url=" + document.location.origin + "/primo-explore/search?vid="+ vid +"%26performLogout=true"
+            scope.$root.$$childHead.$ctrl.userSessionManagerService.userLogout() 
+          //  document.location.href = "https://leuven-primo.hosted.exlibrisgroup.com/pds?func=logout&calling_system=primo&institute=ECB&url=" + document.location.origin + "/primo-explore/search?vid="+ vid +"%26performLogout=true"
         }
     }
 ]);
@@ -44,6 +45,8 @@ app.controller('prmUserAreaAfterController', ['$element', '$scope', '$location',
 
         ctrl.insertUserSignin = function () {
             var elementRemove = document.getElementsByTagName('prm-user-area')[0];
+            console.log (elementRemove) 
+            angular.element(elementRemove.children[2]).remove();
             angular.element(elementRemove.children[1]).remove();
             angular.element(elementRemove.children[0]).remove();
             $scope.signIn = function () {
