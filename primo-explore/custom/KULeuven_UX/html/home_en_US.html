@@ -74,8 +74,10 @@
  border:1px solid #53738c;
  margin-left:0.3em;
   display:inline-block; background-color: #fff; font-size:1.2em;">
+
+  <!--- Link to KULeuven Regionale View new UI -->
+  <!--
                     <select name="campus" id="campusview" style='padding-top: 0.2em; color: #53738c;' onchange="document.location.href = location.protocol + location.port + '//' + location.host + '/primo-explore/search?sortby=rank&vid=' + this.value;">
-                        >
                         <option value="">Select location</option>
                         <option value="KULeuven_ODISEE_UX">Brussel, Gent en Aalst</option>
                         <option value="KULeuven_LUCA_UX">Sint-Lucas Brussel en Gent</option>
@@ -84,6 +86,18 @@
                         <option value="KULeuven_TMOREM_UX">Sint-Katelijne-Waver</option>
                         <option value="KULeuven_TMOREK_UX">Geel</option>
                     </select>
+-->
+
+                       <select name="campus" id="campusview" style='padding-top: 0.2em; color: #53738c;' 
+                       onchange="document.location.href = location.protocol + location.port + '//' + location.host + '/primo_library/libweb/action/search.do?vid=' + this.value;">
+                        <option value="">Select location</option>
+                        <option value="KULeuven_ODISEEX">Brussel, Gent en Aalst</option>
+                        <option value="KULeuven_LUCA">Sint-Lucas Brussel en Gent</option>
+                        <option value="KULeuven_UCLL">Diepenbeek</option>
+                        <option value="KULeuven_TMOREM">Sint-Katelijne-Waver</option>
+                        <option value="KULeuven_TMOREKX">Geel</option>
+                    </select>
+
                 </div>
 
 
