@@ -10,6 +10,9 @@ let debug = require('gulp-debug');
 var wrap = require("gulp-wrap");
 let runSequence = require('run-sequence');
 
+let browserify = require("browserify");
+let fs = require("fs");
+
 let config = require('../config.js');
 let buildParams = config.buildParams;
 var async = require('async');
@@ -38,8 +41,16 @@ gulp.task('build-all-packages', function (done) {
         for (var i = 0; i < files.length; i++) {
             var code = files[i].replace(basedir, '').replace('/', '')
             config.setView(code);
-            tasks.push(function () {
+            console.log(code);
 
+            tasks.push(function () {
+                if (code === 'Lirias'){
+                    buildByBrowserify();
+                } else {
+                    buildByConcatination();
+                }
+
+                /*
            return gulp.src([buildParams.customModulePath(), buildParams.mainPath(), buildParams.customNpmJsPath(), '!' + buildParams.customPath(), '!' + buildParams.customNpmJsModulePath(), '!' + buildParams.customNpmJsCustomPath()])
                .pipe(concat(buildParams.customFile))
                .pipe(babel({
@@ -51,6 +62,7 @@ gulp.task('build-all-packages', function (done) {
                })
                .pipe(wrap('(function(){\n"use strict";\n<%= contents %>\n})();'))
                .pipe(gulp.dest(buildParams.viewJsDir()));
+            */
             }());
         }
 
@@ -79,3 +91,41 @@ gulp.task('build-all-packages', function (done) {
     
     async.parallel(tasks, done);
 });
+
+
+
+
+function buildByConcatination() {
+    return gulp.src([buildParams.customModulePath(),buildParams.mainPath(),buildParams.customNpmJsPath(),'!'+buildParams.customPath(),'!'+buildParams.customNpmJsModulePath(),'!'+buildParams.customNpmJsCustomPath()])
+        .pipe(concat(buildParams.customFile))
+        .pipe(babel({
+            presets: ['es2015']
+        }))
+        .on("error", function(err) {
+            if (err && err.codeFrame) {
+                gutil.log(
+                    gutil.colors.red("Browserify error: "),
+                    gutil.colors.cyan(err.filename) + ` [${err.loc.line},${err.loc.column}]`,
+                    "\r\n" + err.message + "\r\n" + err.codeFrame);
+            }
+            else {
+                gutil.log(err);
+            }
+            this.emit("end");
+        })
+        .pipe(wrap('(function(){\n"use strict";\n<%= contents %>\n})();'))
+        .pipe(gulp.dest(buildParams.viewJsDir()));
+}
+
+function buildByBrowserify() {
+    return browserify({
+        debug: true,
+        entries: buildParams.mainJsPath(),
+        paths:[
+            buildParams.viewJsDir()+'/node_modules'
+        ]
+    })
+        .transform("babelify",{presets: ["es2015"], plugins: ["transform-html-import-to-string"]})
+        .bundle()
+        .pipe(fs.createWriteStream(buildParams.customPath()));
+}
