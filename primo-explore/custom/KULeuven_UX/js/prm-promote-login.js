@@ -57,6 +57,10 @@ app.controller("prmPromoteLoginController", ['$scope', '$http', '$mdDialog', '$c
     }
 
     function DialogController($scope, $mdDialog) {
+        $scope.loginDialog = function () {
+            self.parentCtrl.loginService.handleLoginClick();
+        };
+
         $scope.closeDialog = function () {
             $mdDialog.hide();
         };
@@ -68,6 +72,9 @@ app.controller("prmPromoteLoginController", ['$scope', '$http', '$mdDialog', '$c
                 //sessionStorage.setItem('primoPromoteLogin', $scope.primoPromoteLogin);
             }
         };
+
+
+
     }
   
     if (!self.parentCtrl.isLoggedIn) {

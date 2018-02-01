@@ -10,8 +10,9 @@
 import './utils'
 
 /* import your component configuration*/
-// TODO: Creating a language switch  
-// import {changeLangConfig} from './components/general/changeLang'
+// TODO: Creating a language switch
+//import {changeLangConfig} from './components/general/changeLang'
+
 /*
 import {camTabsConfig} from './components/general/camTabs'
 import {camBrowseButtonConfig} from './components/general/camBrowseButton'
@@ -34,7 +35,7 @@ export default class AfterComponents {
     */
     return [
       // TODO: Creating a language switch  
-//      {name: 'change-lang', config: changeLangConfig, enabled: true, appendTo: null}
+   //   {name: 'change-lang', config: changeLangConfig, enabled: true, appendTo: null}
 /*
       {name: 'cam-tabs', config: camTabsConfig, enabled: true, appendTo: null},
       {name: 'cam-browse-button', config: camBrowseButtonConfig, enabled: true, appendTo: null}

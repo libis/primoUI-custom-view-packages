@@ -1,4 +1,5 @@
 
+
 prm-topbar  {
     height: auto;
 }
@@ -13,7 +14,6 @@ prm-topbar navbar__title a:hover
     box-shadow: inherit;
 
 }
-
 
 /*
 prm-topbar .md-button a,
@@ -37,12 +37,22 @@ prm-topbar > div.top-nav-bar {
 }
 
 prm-topbar > div.top-nav-bar div.navbar--local > div.container {
-    display: flex
+    display: block;
+    min-height:30px;
+    
 }
 prm-topbar > div.top-nav-bar div.navbar--local > div.container prm-search-bookmark-filter {
     width:100%;
-    margin-top: -35px;
+    margin-top: -25px;
 }
+
+prm-topbar > div.top-nav-bar div.navbar--local > div.container  prm-main-menu >  nav > ul {
+    margin-left:0px;
+    margin-right: 0px;
+}
+
+
+
 div.search-options {
     flex: 0 0 0%;
 }
@@ -77,6 +87,4 @@ prm-search-bar div.search-input input#searchBar {
     border-right: 0pc;
     border-top-right-radius: 0pc;
     border-bottom-right-radius: 0pc;
-
-
 }

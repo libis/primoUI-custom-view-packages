@@ -1,24 +1,18 @@
-<ul class="pagination language">
-    <li class="pagination__item">
-        <a class="pagination__btn active" href="" ng-class="{'active':$parent.activeLanguage=='nl'}" 
-        ng-click="changeLanguage('nl')">NL</a>
+<ul ng-model="$ctrl.selectedLanguage" ng-change="$ctrl.changeLanguage()"
+    aria-label="{{'nui.aria.account.details.langaugesselect' | translate}}"
+    class="pagination language">
+    <li ng-repeat="language in ::$ctrl.languages">
+        <a class="pagination__btn" href="" 
+            ng-class="{'active':$ctrl.selectedLanguage == '{{language}}'}" 
+            ng-if="language == 'nl_BE'"
+            ng-click="$ctrl.selectedLanguage='nl_BE'; $ctrl.changeLanguage()">
+            NL
+        </a> 
+        <a class="pagination__btn" href="" 
+            ng-class="{'active':$ctrl.selectedLanguage=='{{language}}'}" 
+            ng-if="language == 'en_US'"
+            ng-click="$ctrl.selectedLanguage='en_US'; $ctrl.changeLanguage()">     
+            EN
+        </a> 
     </li>
-    <li class="pagination__item">
-        <a class="pagination__btn" href="" ng-class="{'active':$parent.activeLanguage=='en'}"
-         ng-click="changeLanguage('en')">EN</a>
-    </li>
-    -----   
-    <div ng-if="::($ctrl.getLabelType() == \'text\')"></div>
-        <span translate="nui.mypref.label.interface_languages"></span>
-    </div>
-    ------------
-    <li class="pagination__item">
-        <a class="pagination__btn" href="" ng-class="{'active':$parent.activeLanguage=='en'}"
-         ng-click="changeLanguage('en')">FR</a>
-
-         
-    </li>
-    ------
 </ul>
-
-

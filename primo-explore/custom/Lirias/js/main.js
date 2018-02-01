@@ -13,7 +13,7 @@
 import Components from './components'
 import topbarHTML from './components/general/topbar.html'
 import topbarMainMenuHTML from './components/general/topbar-main-menu.html'
-
+import changeLangHTML from './components/general/changeLang.html'
 
 /* angular.modules is nu beschikbaar in de console */
 /***************************************************/
@@ -28,7 +28,6 @@ import topbarMainMenuHTML from './components/general/topbar-main-menu.html'
 })(angular.module);
 /***************************************************/
 
-
 //Create the centralCustom module;
 let app = angular.module('viewCustom', [])
   .config(($sceDelegateProvider) => {
@@ -36,29 +35,11 @@ let app = angular.module('viewCustom', [])
       '**'
     ]);
   })
-  /*
-  .decorator(
-  "$UserSessionManagerService",
-  function userSessionManagerServiceDecorator($delegate) {
-    // Return the decorated service.
-    return (decoratedUserSessionManagerService);
-    // I append a new message to the existing greeting.
-    function decoratedUserSessionManagerService(service) {
-      console.log(service)
-      return ($delegate(service));
-
-    }
-
-  }
-  )
-*/
-
   .run(($templateCache) => {
     $templateCache.put('components/search/topbar/topbar.html', topbarHTML);
     $templateCache.put('components/search/topbar/mainMenu/main-menu.html', topbarMainMenuHTML);
-    // $templateCache.put('components/infra/lang/change-lang.html', selectLanguageHTML);
+    $templateCache.put('components/infra/lang/change-lang.html',changeLangHTML);
   });
-
 //Contains the after component selectors that will be injected
 let afterComponents = {};
 
