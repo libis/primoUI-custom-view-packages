@@ -2,13 +2,13 @@
  * Add Icon of source to briefdisplay
  * Tom vanmechelen
  */
-
+/*
 app.controller('addSourceIconController', ['$scope', function ($scope) {
     var self = this;
     var parentCtrl = $scope.$parent.$ctrl.parentCtrl;
 
     var iconConf = [
-     /*  { 'sourceid': '32LIBIS_ALMA_DS', 'iconUrl': '//limo.libis.be/primo_library/libweb/libis/images/limo.png', 'iconText': '' }, */
+     //  { 'sourceid': '32LIBIS_ALMA_DS', 'iconUrl': '//limo.libis.be/primo_library/libweb/libis/images/limo.png', 'iconText': '' }, 
        { 'sourceid': 'lirias', 'iconUrl': '//limo.libis.be/primo_library/libweb/libis/images/lirias.jpg', 'iconText': 'Lirias' }
     ]
     var iconConfSources = iconConf.map(function (obj) { return obj.sourceid; });
@@ -44,7 +44,7 @@ app.component('prmBriefResultAfter', {
     controller: 'addSourceIconTagController',
     template: ''
 });
-
+*/
 /*
 app.component('prmSearchResultThumbnailContainerAfter', {
     bindings: { parentCtrl: '<' },

@@ -13,12 +13,15 @@ prm-topbar .md-button a:hover
 
 prm-topbar > div.top-nav-bar prm-main-menu,
 prm-topbar > div.top-nav-bar prm-logo-after,
-prm-topbar > div.top-nav-bar prm-search-bookmark-filter,
-prm-topbar > div.top-nav-bar prm-user-area
+prm-topbar > div.top-nav-bar prm-search-bookmark-filter
 {
     display: none
 }
-
+/*
+prm-topbar > div.top-nav-bar prm-user-area {
+    display: none
+}
+*/
 prm-topbar prm-logo {
     height: 100%;
     width: auto;

@@ -128,6 +128,10 @@ app.controller("prmPromoteLoginController", ['$scope', '$http', '$mdDialog', '$c
     };
 
     function DialogController($scope, $mdDialog) {
+        $scope.loginDialog = function () {
+            self.parentCtrl.loginService.handleLoginClick();
+        };
+
         $scope.closeDialog = function () {
             $mdDialog.hide();
         };

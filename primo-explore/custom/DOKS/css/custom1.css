@@ -654,6 +654,16 @@ prm-facet-exact .section-content .md-chips .md-chip.facet-element-marker-local3 
 div.search-switch-buttons {
   display:none
 }
+div#user_area_after{
+    padding-left: 0.8em;
+}
+md-option[value='fr_FR'] {
+    display: none
+}
+
+.prm-secondary-color, prm-search-bookmark-filter .md-button, prm-topbar .top-nav-bar {
+    color: #fff
+}
 prm-topbar .md-button a,
 prm-topbar .md-button a:link,
 prm-topbar .md-button a:visited
@@ -669,12 +679,15 @@ prm-topbar .md-button a:hover
 
 prm-topbar > div.top-nav-bar prm-main-menu,
 prm-topbar > div.top-nav-bar prm-logo-after,
-prm-topbar > div.top-nav-bar prm-search-bookmark-filter,
-prm-topbar > div.top-nav-bar prm-user-area
+prm-topbar > div.top-nav-bar prm-search-bookmark-filter
 {
     display: none
 }
-
+/*
+prm-topbar > div.top-nav-bar prm-user-area {
+    display: none
+}
+*/
 prm-topbar prm-logo {
     height: 100%;
     width: auto;

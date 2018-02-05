@@ -1,0 +1,10 @@
+div#user_area_after{
+    padding-left: 0.8em;
+}
+md-option[value='fr_FR'] {
+    display: none
+}
+
+.prm-secondary-color, prm-search-bookmark-filter .md-button, prm-topbar .top-nav-bar {
+    color: #fff
+}

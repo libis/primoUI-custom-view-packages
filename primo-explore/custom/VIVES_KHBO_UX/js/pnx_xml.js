@@ -2,7 +2,7 @@
  * Add link to pnx and xml
  * Tom vanmechelen
  */
-
+/*
 app.controller('addPnxXmlController', [function () {
     var vm = this;
 
@@ -29,14 +29,14 @@ app.controller('addPnxXmlController', [function () {
 
  
 }]);
-
+*/
 /*
 app.component('addPnxXml', {
     bindings: { parentCtrl: '<' },
     template: '<div ng-if="$ctrl.recordid" class="recordid"><span class="recordid-text">{{$ctrl.recordid}}</span></div>'
 });
 */
-
+/*
 app.component('prmBriefResultContainerAfter', {
     bindings: { parentCtrl: '<' },
     controller: 'addPnxXmlController',
@@ -49,3 +49,4 @@ app.component('prmBriefResultContainerAfter', {
             </div>
             </add-pnx-xml>`
 });
+*/
