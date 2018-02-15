@@ -47,10 +47,19 @@ app.controller('prmUserAreaAfterController', ['$element', '$scope', '$location',
 
     ctrl.insertUserSignin = function () {
         var elementRemove = document.getElementsByTagName('prm-user-area')[0];
-        console.log(elementRemove);
+        var i = elementRemove.children.length - 1;
+        while (i >= 0) {
+            if (elementRemove.children[i].tagName !== 'PRM-USER-AREA-AFTER') {
+                angular.element(elementRemove.children[i]).remove();
+            }
+            i--;
+        }
+        /*
+        console.log (elementRemove) 
         angular.element(elementRemove.children[2]).remove();
         angular.element(elementRemove.children[1]).remove();
         angular.element(elementRemove.children[0]).remove();
+        */
         $scope.signIn = function () {
             ctrl.parentCtrl.loginIframeService.loginService.handleLoginClick();
         };
