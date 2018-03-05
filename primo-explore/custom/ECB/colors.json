@@ -1,12 +1,18 @@
 {
-  "primary": "#ccc",
-  "secondary": "#0053A0",
-  "backgroundColor": "#fff",
+  "primary": "#f6f6f6",
+  "secondary" : "#0053A0",
+  "backgroundColor" : "#fff",
   "links": "#5C92BD",
   "warning": "tomato",
-  "positive": "#0053A0",
+  "positive": "#0f7d00",
   "negative": "gray",
-  "notice": "#e08303",
+  "notice": "#B84D00",
+  "linkTitle": "#33FFFF",
   "citation": "tomato",
-  "citationTitles": "rgb(68, 112, 123)"
+  "citationTitles": "rgb(68, 112, 123)",
+  "personalization": "#7d1538",
+  "searchButton": "#0f7d00",
+  "userName": "#f3f3f3",
+  "alert": "#f79570",
+  "footer": "#a64d94"
 }

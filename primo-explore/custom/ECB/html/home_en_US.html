@@ -1,118 +1,209 @@
+<link id="favicon" rel="icon" type="image/png" href="custom/ECB/img/library-logo.png" />
 
-<md-content layout-xs="column" layout="row">
-    <div flex="55" layout="column">
-        <md-card class="default-card">
-            <md-card-title>
-                <md-card-title-text>
-                    <span class="md-headline">What does OneSearch cover?</span>
-                </md-card-title-text>
-            </md-card-title>
-            <md-card-content>
-                <p>
-                    OneSearch contains print and electronic information resources which can be searched in one click.
-                </p>
-                <p>
+<style>
+div#facet-to-left-spacer-home-page-corrector{
+    margin-right:0;
+}
+@media screen and (min-width:1279px) and (max-width:1599px){
+    div#facet-to-left-spacer-home-page-corrector{
+        margin-right:5.5rem;
+    }
+    div.homepage{
+        margin-right: -5.5rem;
+    }
+}
+</style>
+<div layout="column" layout-fill=""
+    class="layout-fill layout-column zero-padding">
+    <div class="search-wrapper dark-toolbar prm-top-bar-container
+     main-header-row layout-row facet-to-left" div="" layout="row"
+       ng-class="{'facet-to-left': $ctrl.facetToLeft &amp;&amp; !$ctrl.mediaQueries.xs &amp;&amp; !$ctrl.mediaQueries.sm &amp;&amp; !$ctrl.mediaQueries.md}">
+        <div class="facet-to-left-spacer"  id="facet-to-left-spacer-home-page-corrector"></div>
+
+        <div class="homepage search-elements-wrapper layout-column simple-mode  facet-to-left-search-bar"
+            layout="column"
+            ng-class="(!$ctrl.advancedSearch ?'simple-mode' : 'advanced-mode')  + ' ' + ($ctrl.mainSearchField ? 'has-input' : '') + ' ' + ($ctrl.mediaQueries.lgPlus ? 'flex-lgPlus-55' : '') + ' ' + ($ctrl.facetToLeft? 'facet-to-left-search-bar' : '')">
+            <div class="simple-search-wrapper layout-full-width" aria-hidden="false" style="display:flex;">
+
+                <div flex="100" flex-sm="55" layout="column">
+                    <md-card class="default-card">
+                        <md-card-title>
+                            <md-card-title-text>
+                                <span class="md-headline">What does OneSearch cover?</span>
+                            </md-card-title-text>
+                        </md-card-title>
+                        <md-card-content>
+                            <p>
+                                OneSearch contains print and electronic information resources which can be searched in one click.
+                            </p>
+                            <p>
+            
+            
+            
+                                <a href="javascript:angular.element(document.querySelectorAll('prm-user-area-after button')[0]).triggerHandler('click')"
+                                    id="mimic_signin">Signing-in</a>
+                                with your Library username and password will allow you to:
+                            </p>
+                            <ul>
+                                <li>Request items directly via the system</li>
+                                <li>Check your loans and requests, and</li>
+                                <li>Save your results and queries</li>
+            
+                            </ul>
+                        </md-card-content>
+                    </md-card>
+                    <md-card class="default-card">
+                        <md-card-title>
+                            <md-card-title-text>
+                                <span class="md-headline">Need help?</span>
+                            </md-card-title-text>
+                        </md-card-title>
+                        <md-card-content>
+                            <p>
+                                Contact Library:
+                                <a href="mailto:library@ecb.europa.eu">library@ecb.europa.eu</a>
+                            </p>
+                            <p>
+                                Browse
+                                <a href="helpHandler.do?helpId=search">Help</a>
+                            </p>
+            
+                        </md-card-content>
+            
+                    </md-card>
+            
+            
+            
+                    <md-card class="default-card" style="display:none">
+                        <md-card-title>
+                            <md-card-title-text>
+                                <span class="md-headline"> What does that icon mean? </span>
+                            </md-card-title-text>
+                        </md-card-title>
+                        <md-card-content>
+                            <p>
+                                <a style="color: #0053a0; background-color: rgba(0,0,0,.1); cursor:inherit" class="md-icon-button button-over-dark md-button md-primoExplore-theme md-ink-ripple">
+                                    <prm-icon class="rotate-25" icon-type="svg" svg-icon-set="primo-ui" icon-definition="prm_pin">
+                                        <md-icon md-svg-icon="primo-ui:prm_pin" alt="" class="md-primoExplore-theme" aria-hidden="true">
+                                            <svg id="prm_pin" width="100%" height="100%" viewBox="0 0 24 24" y="0" xmlns="http://www.w3.org/2000/svg" fit="" preserveAspectRatio="xMidYMid meet"
+                                                focusable="false">
+                                                <path d="M16,12V4H17V2H7V4H8V12L6,14V16H11.2V22H12.8V16H18V14L16,12Z"></path>
+                                            </svg>
+                                        </md-icon>
+                                    </prm-icon>
+                                </a>
+                                Favourites
+                            </p>
+            
+                            <p>
+                                <a style="color: #0053a0; background-color: rgba(0,0,0,.1); cursor:inherit" class="md-icon-button button-over-dark md-button md-primoExplore-theme md-ink-ripple">
+                                    <prm-icon class="rotate-25" icon-type="svg" svg-icon-set="primo-ui" icon-definition="restore">
+                                        <md-icon md-svg-icon="primo-ui:restore" alt="" class="md-primoExplore-theme" aria-hidden="true">
+                                            <svg id="restore" width="100%" height="100%" viewBox="0 0 24 24" y="1032" xmlns="http://www.w3.org/2000/svg" fit="" preserveAspectRatio="xMidYMid meet"
+                                                focusable="false">
+                                                <path d="M13 3c-4.97 0-9 4.03-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42C8.27 19.99 10.51 21 13 21c4.97 0 9-4.03 9-9s-4.03-9-9-9zm-1 5v5l4.28 2.54.72-1.21-3.5-2.08V8H12z"></path>
+                                            </svg>
+                                        </md-icon>
+                                    </prm-icon>
+                                </a>
+                                Search history
+            
+                            </p>
+                        </md-card-content>
+                    </md-card>
+            
+            
+                </div>
+                <div flex="100" flex-sm="45" layout="column">
+                    <md-card class="default-card">
+                        <md-card-title>
+                            <md-card-title-text>
+                                <span class="md-headline">Search tips</span>
+                            </md-card-title-text>
+                        </md-card-title>
+                        <md-card-content>
+            
+                            <table id="help">
+                                <tr valign="top">
+                                    <td width="70px">
+                                        AND
+                                    </td>
+                                    <td>
+                                        Find results with both words
+                                        <br /> Example: ECB AND banknotes
+                                        <br />
+                                    </td>
+                                </tr>
+                                <tr valign="top">
+                                    <td>
+                                        OR
+                                    </td>
+                                    <td>
+                                        Find results with one of several words.
+                                        <br /> Example: state OR sovereign
+                                        <br />
+                                    </td>
+                                </tr>
+                                <tr valign="top">
+                                    <td>
+                                        NOT
+                                    </td>
+                                    <td>
+                                        Find results that exclude a word
+                                        <br /> Example: celtic NOT Irish
+                                        <br />
+                                    </td>
+                                </tr>
+                                <tr valign="top">
+                                    <td>
+                                        ?
+                                    </td>
+                                    <td>
+                                        Add a question mark as a placeholder for one character.
+                                        <br /> Example: wom?n will retrieve woman and women
+                                        <br />
+                                    </td>
+                                </tr>
+                                <tr valign="top">
+                                    <td>
+                                        *
+                                    </td>
+                                    <td>
+                                        For truncated searches, use an asterisk
+                                        <br /> Example: mone* will retrieve money, monetary, monetaire
+                                        <br />
+                                    </td>
+                                </tr>
+                                <tr valign="top">
+                                    <td>
+                                        " "
+                                    </td>
+                                    <td>
+                                        Find results with the exact phrase
+                                        <br /> Example: "Sovereign debt"
+                                        <br />
+                                    </td>
+                                </tr>
+                            </table>
+            
+            
+                        </md-card-content>
+                    </md-card>
+                </div>
 
 
-                    
-                    <a href="javascript:angular.element(document.querySelectorAll('prm-authentication button')[0]).triggerHandler('click');" id="mimic_signin">Signing-in</a>
-
-                    Signing-in with your Library username and password will allow you to:
-                </p>
-                <ul>
-                    <li>Request items directly via the system</li>
-                    <li>Check your loans and requests, and</li>
-                    <li>Save your results and queries</li>
-
-                </ul>
-            </md-card-content>
-        </md-card>
-        <md-card class="default-card">
-            <md-card-title>
-                <md-card-title-text>
-                    <span class="md-headline">Need help?</span>
-                </md-card-title-text>
-            </md-card-title>
-            <md-card-content>
-                <p>
-                    Contact Library: <a href="mailto:library@ecb.europa.eu">library@ecb.europa.eu</a>
-                </p>
-                <p>
-                    Browse <a href="helpHandler.do?helpId=search">Help</a>
-                </p>
-
-            </md-card-content>
-</div>
-    <div flex-xs flex="45" layout="column">
-        <md-card class="default-card">
-            <md-card-title>
-                <md-card-title-text>
-                    <span class="md-headline">Search tips</span>
-                </md-card-title-text>
-            </md-card-title>
-            <md-card-content>
-               
-                <table id="help">
-                    <tr valign="top">
-                        <td width="70px">
-                            AND
-                        </td>
-                        <td>
-                            Find results with both words<br />
-                            Example: ECB AND banknotes<br />
-                        </td>
-                    </tr>
-                    <tr valign="top">
-                        <td>
-                            OR
-                        </td>
-                        <td>
-                            Find results with one of several words.<br />
-                            Example: state OR sovereign <br />
-                        </td>
-                    </tr>
-                    <tr valign="top">
-                        <td>
-                            NOT
-                        </td>
-                        <td>
-                            Find results that exclude a word<br />
-                            Example: celtic NOT Irish <br />
-                        </td>
-                    </tr>
-                    <tr valign="top">
-                        <td>
-                            ?
-                        </td>
-                        <td>
-                            Add a question mark as a placeholder for one character.<br />
-                            Example: wom?n will retrieve woman and women <br />
-                        </td>
-                    </tr>
-                    <tr valign="top">
-                        <td>
-                            *
-                        </td>
-                        <td>
-                            For truncated searches, use an asterisk<br />
-                            Example: mone* will retrieve money, monetary, monetaire <br />
-                        </td>
-                    </tr>
-                    <tr valign="top">
-                        <td>
-                            " "
-                        </td>
-                        <td>
-                            Find results with the exact phrase<br />
-                            Example: "Sovereign debt" <br />
-                        </td>
-                    </tr>
-                </table>
 
 
-            </md-card-content>
-        </md-card>
+
+
+
+
+
+            </div>
+            <!---->
+            <!---->
+        </div>
     </div>
+    <!---->
+</div>
 
-
-</md-content>

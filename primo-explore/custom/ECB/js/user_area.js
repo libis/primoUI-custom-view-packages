@@ -1,5 +1,9 @@
 /* https://otago.hosted.exlibrisgroup.com/primo-explore/search?vid=DUNEDIN&sortby=rank&search_scope=All */
 
+
+/* document.title => See Code Table Header/Footer Tiles */
+document.querySelectorAll("link[rel='icon']")[0].setAttribute("href", "/primo-explore/custom/ECB/img/favicon.png")
+
 /* TODO : get this on Central Package level */
 
 app.component('prmLinkedUserSelectorAfter', {
@@ -32,7 +36,7 @@ app.component('prmUserAreaAfter', {
 });
 
 app.controller('prmUserAreaAfterController', ['$element', '$scope', '$location', '$templateCache',
-    function ($element, $scope, $location, $templateCach) {
+    function ($element, $scope, $location, $templateCache) {
 
         var ctrl = this;
         ctrl.$onInit = function () {
