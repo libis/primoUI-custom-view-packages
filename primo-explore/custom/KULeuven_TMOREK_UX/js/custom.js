@@ -24,8 +24,9 @@ app.controller("prmPromoteLoginController", ['$scope', '$http', '$mdDialog', '$c
         /* Redirect to Login With institution=KULeuven */
         var auth = window.appConfig.authentication[0];
         var loginUrl = self.parentCtrl.loginService.loginUrl(auth['profile-name'], auth['authentication-system']);
-        loginUrl = loginUrl.replace(/institution=([^&])*/, "institution=KUL");
-        document.location.href = loginUrl;
+        //loginUrl = loginUrl.replace(/institution=([^&])*/, "institution=KUL");
+        //      document.location.href=loginUrl;
+        self.parentCtrl.loginService.handleLoginClick();
     }
 }]);
 

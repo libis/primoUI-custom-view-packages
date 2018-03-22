@@ -1,0 +1,12 @@
+/* A/B Testing section in Header */
+#ABTestMessage {
+	text-align: center;
+	color: red;
+	font-weight: bold;
+	font-family: Georgia;
+	font-size: 120%;
+}
+
+.ABTesting {margin-left: 35px; margin-right: 5px; width: auto;}
+.widthEdit {width: 15%}
+.widthValue {width: 30%}

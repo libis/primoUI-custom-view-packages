@@ -88,3 +88,11 @@ prm-search-bar div.search-input input#searchBar {
     border-top-right-radius: 0pc;
     border-bottom-right-radius: 0pc;
 }
+
+md-content md-content, md-content.md-primoExplore-theme {
+    background-color:#fff
+}
+
+div.md-range-content md-input-container input[type="number"]{
+    padding: 2px
+}

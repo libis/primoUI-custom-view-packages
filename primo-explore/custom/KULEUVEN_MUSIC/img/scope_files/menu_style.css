@@ -1,0 +1,45 @@
+* 									{ margin: 0; padding: 0; }
+body								{ font: 14px Helvetica, Sans-Serif; } 
+#page-wrap							{ width: 800px; margin: 25px auto; } 
+ul									{ list-style: none; }
+p                                   { margin: 15px 0; }
+
+li.menuli							{ }
+
+/* 
+	LEVEL ONE
+*/
+ul.dropdown                         { position: relative; z-index: 99; }
+ul.dropdown li                      { font: 14px Helvetica, Sans-Serif; font-weight: bold; float: left; zoom: 1; } /*background: #ccc; }*/
+ul.dropdown a:hover		            { color: #000; }
+ul.dropdown a:active                { color: #ffa500; }
+ul.dropdown li a                    { display: block; padding: 8px 8px; color: #096a9a; border-right: 2px solid azure; text-decoration: none; } /*color: #222; border-right: 1px solid #333; }*/
+ul.dropdown li:last-child a         { border-right: none; } /* Doesn't work in IE */
+ul.dropdown li.hover,
+ul.dropdown li:hover                { background: #ABD2E6; color: #096a9a; position: relative; }
+ul.dropdown li.hover a              { color: #096a9a; }
+
+
+/* 
+	LEVEL TWO
+*/
+ul.dropdown ul 						{ width: 220px; visibility: hidden; position: absolute; top: 100%; left: 0; }
+ul.dropdown ul li 					{ font: 14px Helvetica, Sans-Serif; font-weight: normal; background: #ABD2E6; color: #000; 
+									  border-bottom: 1px solid #ccc; float: none; }
+ul.dropdown ul li.hover,
+ul.dropdown ul li:hover                { background: #ebf3f8; color: #096a9a; position: relative; }
+									  
+                                    /* IE 6 & 7 Needs Inline Block */
+ul.dropdown ul li a					{ border-right: none; width: 92%; display: inline-block; } 
+
+/* 
+	LEVEL THREE
+*/
+ul.dropdown ul ul 					{ left: 100%; top: 0; }
+ul.dropdown li:hover > ul 			{ visibility: visible; }
+
+/* backoffice footer buttons */
+/* This was added here so it will be imported to all menus on the BO */
+.alpha_menu { position:fixed; bottom:0px; width:100%; background:rgb(255,255,255); background: transparent\9; background:rgba(255,255,255,0.75); filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#bfFFFFFF,endColorstr=#bfFFFFFF); zoom: 1; }
+.alpha_menu:nth-child(n) { filter: none; }
+.alpha_menu div {padding-right:3%;}

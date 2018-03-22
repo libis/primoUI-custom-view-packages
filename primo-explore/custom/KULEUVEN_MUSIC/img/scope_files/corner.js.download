@@ -1,0 +1,41 @@
+
+
+function getGreyCorners()
+{
+	var divs=document.getElementsByTagName('*');
+	var numDivs=divs.length;
+	var roundedDivs= new Array();
+	
+	for(i=0;i<numDivs;i++)
+		if(/\bRounded\b/.test(divs[i].className))
+			roundedDivs[roundedDivs.length]=divs[i];
+	var numRoundedDivs=roundedDivs.length;
+
+	for(i=0;i<numRoundedDivs;i++)
+	{
+		var original = roundedDivs[i];
+		
+		var rb = document.createElement('div');
+		rb.className = 'grey_rb';	
+		
+		var rt = document.createElement('div');
+		rt.className = 'grey_rt'; 
+		
+		var lb = document.createElement('div');
+		lb.className = 'grey_lb'; 
+		
+		var lt = document.createElement('div');
+		lt.className = 'grey_lt grey_lt_class'; 		
+
+		original.parentNode.replaceChild(rb,original);	
+		
+		rb.appendChild(rt);
+		rt.appendChild(lb);
+		lb.appendChild(lt);
+		lt.appendChild(original);
+	
+	}
+}
+window.onload=getGreyCorners;
+
+

@@ -59,3 +59,8 @@ md-toolbar.md-primoExplore-theme .md-toolbar-tools prm-linked-user-selector md-i
     background-color: #1f98bd; }
 
 /* view color hook end*/
+
+
+md-content, md-content.md-primoExplore-theme {
+  background-color: #fff;
+}
