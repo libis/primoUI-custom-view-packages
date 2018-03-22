@@ -230,7 +230,7 @@
 .request-form md-input-container .md-input-container-dummy > .md-select-dummy .md-select-value.md-select-placeholder,
 .request-form md-input-container md-select ._md-select-value._md-select-placeholder,
 .request-form md-input-container .md-input-container-dummy > .md-select-dummy ._md-select-value._md-select-placeholder, .result-item-actions .md-icon-button, .result-item-actions .more-options-button, prm-add-query-to-saved-searches .custom-button, .md-autocomplete-suggestions .suggestion-scope, md-tab-content .tab-content-header md-input-container md-select-value .md-text {
-  color: #f6f6f6; }
+  color: #003299; }
   .prm-primary-color.prm-hue1, .request-form md-input-container label.prm-hue1,
   .request-form md-input-container label.prm-hue1:not(.md-no-float):not(._md-container-ignore),
   .request-form md-input-container md-select .prm-hue1.md-select-value.md-select-placeholder,
@@ -241,7 +241,7 @@
 
 .prm-primary-bg, prm-spinner.overlay-cover.light-on-dark:after, prm-search-bar, prm-atoz-search-bar, prm-browse-search-bar, prm-tags-search-bar, prm-newspapers-search-bar, prm-collection-gallery-header .collection-header-inner {
   color: white;
-  background-color: #f6f6f6; }
+  background-color: #003299; }
   .prm-primary-bg.prm-hue1, prm-spinner.prm-hue1.overlay-cover.light-on-dark:after, prm-topbar .top-nav-bar, prm-search-bar.prm-hue1, prm-atoz-search-bar.prm-hue1, prm-browse-search-bar.prm-hue1, prm-tags-search-bar.prm-hue1, prm-newspapers-search-bar.prm-hue1, prm-collection-gallery-header .prm-hue1.collection-header-inner {
     background-color: #eeeeee; }
   .prm-primary-bg.prm-hue2, prm-spinner.prm-hue2.overlay-cover.light-on-dark:after, prm-search-bar.prm-hue2, prm-atoz-search-bar.prm-hue2, prm-browse-search-bar.prm-hue2, prm-tags-search-bar.prm-hue2, prm-newspapers-search-bar.prm-hue2, prm-collection-gallery-header .prm-hue2.collection-header-inner, md-backdrop.md-opaque {
@@ -744,11 +744,13 @@ prm-search-bar .search-element-inner  .search-options{
 }
 
 prm-search-bar .search-switch-buttons .md-button.switch-to-advanced{
-    color:#0053A0;
+     /* color:#0053A0; */
+     color:#fff;
 }
 
 prm-search-bar .simple-search-wrapper .search-actions {
-    background-color:#0053A0;
+    background-color:#0053A0; 
+    
     color: #fff;
 }
 prm-search-bar .simple-search-wrapper .search-actions .md-button.button-confirm{
@@ -865,6 +867,63 @@ html, body {
 .__xs .sidebar, .multiselect-submit .multiselect-submit-inner, prm-full-view-cont prm-recomendation-item .media-on-hover .pin-button, prm-full-view-cont .recommendations-title:after, prm-full-view-cont .recommendations-title prm-icon, md-virtual-repeat-container#prm-simple-search .md-autocomplete-suggestions md-divider, md-dialog md-toolbar:not(.md-menu-toolbar), md-card .card-content-block {
 
     */
+
+
+    prm-alphabet-toolbar .md-button {
+        /* color: #226091; */
+        /*
+        color: #0053A0;
+        background-color: #fff;
+        */
+        min-width: 25px;
+    }   
+    prm-alphabet-toolbar .md-button.letter-button {
+        /* color: #226091; */
+        /*
+        color: #0053A0;
+        background-color: #fff;
+        */
+        width: 25px;
+    }  
+
+    prm-alphabet-toolbar .md-button:hover:not([disabled]) {
+        /*
+        color: #fff;
+        background-color: #5C92BD;
+        */
+    }   
+
+    prm-topbar {
+        height: 69px;
+    }
+
+    prm-topbar prm-logo div#banner {
+        padding-top:0;
+        padding-bottom: 4px;
+        /*
+        padding-left:1em;
+        padding-left:1em;
+        */
+    }
+
+
+    #mainMenu > a {
+        box-shadow: none;
+    }
+
+
+/* DIT ZIT IN DE CENTRALE PACKAGE ???????? */
+    div#footer {
+        height: 35px;
+        width: 100%;
+        background-color: #003299;
+        border-top: solid 2px #fff;
+        padding: 0 1em;
+        font-size: small;
+       align-items: center;
+    }
+
+    
 /* primary color hook end*/
 
 /*
@@ -955,10 +1014,19 @@ prm-search-bar .search-switch-buttons .md-button.switch-to-advanced {
 /* primary color hook */
 /* commenttttt*/
 .md-button[aria-label="Submit search"] {
-  background-color: #0053A0; }
+/*  background-color: #0053A0; */
+  background-color:#e1b600;
+}
+.md-button[aria-label="Submit search"].button-confirm:hover:not([disabled]) {
+  /*  background-color: #0053A0; */
+    background-color:#e1b600;
+  }
+
+
   .md-button[aria-label=Search]:hover:not([disabled]), .md-button[aria-label=Search]:focus:not([disabled]), .md-button[aria-label=Search].hovered:not([disabled]), .md-button[aria-label=Search].md-focused:not([disabled]), .md-button[aria-label=Search]._md-focused:not([disabled]) {
     color: #fff;
     background-color: #0053A0;
+
     /*
     color: #031700;
     background-color: rgba(15, 125, 0, 0.1); 
@@ -971,7 +1039,11 @@ prm-search-bar .simple-search-wrapper .search-actions {
 
 .md-button[id=payFinesNow] {
   color: #ccc; }
-  .md-button[id=payFinesNow]:hover:not([disabled]), .md-button[id=payFinesNow]:focus:not([disabled]), .md-button[id=payFinesNow].hovered:not([disabled]), .md-button[id=payFinesNow].md-focused:not([disabled]), .md-button[id=payFinesNow]._md-focused:not([disabled]) {
+  .md-button[id=payFinesNow]:hover:not([disabled]), 
+  .md-button[id=payFinesNow]:focus:not([disabled]), 
+  .md-button[id=payFinesNow].hovered:not([disabled]), 
+  .md-button[id=payFinesNow].md-focused:not([disabled]), 
+  .md-button[id=payFinesNow]._md-focused:not([disabled]) {
     color: #a88a8a;
     background-color: rgba(204, 204, 204, 0.1); }
 

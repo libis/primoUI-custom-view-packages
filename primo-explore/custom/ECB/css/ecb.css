@@ -1,4 +1,4 @@
-﻿/* primary color hook end*/
+/* primary color hook end*/
 
 
 span.user-name:before {
@@ -67,11 +67,13 @@ prm-search-bar .search-element-inner  .search-options{
 }
 
 prm-search-bar .search-switch-buttons .md-button.switch-to-advanced{
-    color:#0053A0;
+     /* color:#0053A0; */
+     color:#fff;
 }
 
 prm-search-bar .simple-search-wrapper .search-actions {
-    background-color:#0053A0;
+    background-color:#0053A0; 
+    
     color: #fff;
 }
 prm-search-bar .simple-search-wrapper .search-actions .md-button.button-confirm{
@@ -188,3 +190,60 @@ html, body {
 .__xs .sidebar, .multiselect-submit .multiselect-submit-inner, prm-full-view-cont prm-recomendation-item .media-on-hover .pin-button, prm-full-view-cont .recommendations-title:after, prm-full-view-cont .recommendations-title prm-icon, md-virtual-repeat-container#prm-simple-search .md-autocomplete-suggestions md-divider, md-dialog md-toolbar:not(.md-menu-toolbar), md-card .card-content-block {
 
     */
+
+
+    prm-alphabet-toolbar .md-button {
+        /* color: #226091; */
+        /*
+        color: #0053A0;
+        background-color: #fff;
+        */
+        min-width: 25px;
+    }   
+    prm-alphabet-toolbar .md-button.letter-button {
+        /* color: #226091; */
+        /*
+        color: #0053A0;
+        background-color: #fff;
+        */
+        width: 25px;
+    }  
+
+    prm-alphabet-toolbar .md-button:hover:not([disabled]) {
+        /*
+        color: #fff;
+        background-color: #5C92BD;
+        */
+    }   
+
+    prm-topbar {
+        height: 69px;
+    }
+
+    prm-topbar prm-logo div#banner {
+        padding-top:0;
+        padding-bottom: 4px;
+        /*
+        padding-left:1em;
+        padding-left:1em;
+        */
+    }
+
+
+    #mainMenu > a {
+        box-shadow: none;
+    }
+
+
+/* DIT ZIT IN DE CENTRALE PACKAGE ???????? */
+    div#footer {
+        height: 35px;
+        width: 100%;
+        background-color: #003299;
+        border-top: solid 2px #fff;
+        padding: 0 1em;
+        font-size: small;
+       align-items: center;
+    }
+
+    

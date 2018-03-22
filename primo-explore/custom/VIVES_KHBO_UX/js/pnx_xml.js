@@ -1,4 +1,4 @@
-﻿/*
+/*
  * Add link to pnx and xml
  * Tom vanmechelen
  */

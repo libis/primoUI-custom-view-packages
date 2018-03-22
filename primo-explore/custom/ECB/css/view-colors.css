@@ -1,10 +1,19 @@
 /* primary color hook */
 /* commenttttt*/
 .md-button[aria-label="Submit search"] {
-  background-color: #0053A0; }
+/*  background-color: #0053A0; */
+  background-color:#e1b600;
+}
+.md-button[aria-label="Submit search"].button-confirm:hover:not([disabled]) {
+  /*  background-color: #0053A0; */
+    background-color:#e1b600;
+  }
+
+
   .md-button[aria-label=Search]:hover:not([disabled]), .md-button[aria-label=Search]:focus:not([disabled]), .md-button[aria-label=Search].hovered:not([disabled]), .md-button[aria-label=Search].md-focused:not([disabled]), .md-button[aria-label=Search]._md-focused:not([disabled]) {
     color: #fff;
     background-color: #0053A0;
+
     /*
     color: #031700;
     background-color: rgba(15, 125, 0, 0.1); 
@@ -17,7 +26,11 @@ prm-search-bar .simple-search-wrapper .search-actions {
 
 .md-button[id=payFinesNow] {
   color: #ccc; }
-  .md-button[id=payFinesNow]:hover:not([disabled]), .md-button[id=payFinesNow]:focus:not([disabled]), .md-button[id=payFinesNow].hovered:not([disabled]), .md-button[id=payFinesNow].md-focused:not([disabled]), .md-button[id=payFinesNow]._md-focused:not([disabled]) {
+  .md-button[id=payFinesNow]:hover:not([disabled]), 
+  .md-button[id=payFinesNow]:focus:not([disabled]), 
+  .md-button[id=payFinesNow].hovered:not([disabled]), 
+  .md-button[id=payFinesNow].md-focused:not([disabled]), 
+  .md-button[id=payFinesNow]._md-focused:not([disabled]) {
     color: #a88a8a;
     background-color: rgba(204, 204, 204, 0.1); }
 

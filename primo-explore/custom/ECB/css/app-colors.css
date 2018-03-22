@@ -230,7 +230,7 @@
 .request-form md-input-container .md-input-container-dummy > .md-select-dummy .md-select-value.md-select-placeholder,
 .request-form md-input-container md-select ._md-select-value._md-select-placeholder,
 .request-form md-input-container .md-input-container-dummy > .md-select-dummy ._md-select-value._md-select-placeholder, .result-item-actions .md-icon-button, .result-item-actions .more-options-button, prm-add-query-to-saved-searches .custom-button, .md-autocomplete-suggestions .suggestion-scope, md-tab-content .tab-content-header md-input-container md-select-value .md-text {
-  color: #f6f6f6; }
+  color: #003299; }
   .prm-primary-color.prm-hue1, .request-form md-input-container label.prm-hue1,
   .request-form md-input-container label.prm-hue1:not(.md-no-float):not(._md-container-ignore),
   .request-form md-input-container md-select .prm-hue1.md-select-value.md-select-placeholder,
@@ -241,7 +241,7 @@
 
 .prm-primary-bg, prm-spinner.overlay-cover.light-on-dark:after, prm-search-bar, prm-atoz-search-bar, prm-browse-search-bar, prm-tags-search-bar, prm-newspapers-search-bar, prm-collection-gallery-header .collection-header-inner {
   color: white;
-  background-color: #f6f6f6; }
+  background-color: #003299; }
   .prm-primary-bg.prm-hue1, prm-spinner.prm-hue1.overlay-cover.light-on-dark:after, prm-topbar .top-nav-bar, prm-search-bar.prm-hue1, prm-atoz-search-bar.prm-hue1, prm-browse-search-bar.prm-hue1, prm-tags-search-bar.prm-hue1, prm-newspapers-search-bar.prm-hue1, prm-collection-gallery-header .prm-hue1.collection-header-inner {
     background-color: #eeeeee; }
   .prm-primary-bg.prm-hue2, prm-spinner.prm-hue2.overlay-cover.light-on-dark:after, prm-search-bar.prm-hue2, prm-atoz-search-bar.prm-hue2, prm-browse-search-bar.prm-hue2, prm-tags-search-bar.prm-hue2, prm-newspapers-search-bar.prm-hue2, prm-collection-gallery-header .prm-hue2.collection-header-inner, md-backdrop.md-opaque {
