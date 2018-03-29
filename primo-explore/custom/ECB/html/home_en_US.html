@@ -14,17 +14,18 @@ div#facet-to-left-spacer-home-page-corrector{
 }
 </style>
 <div layout="column" layout-fill=""
-    class="layout-fill layout-column zero-padding">
+    class="layout-fill layout-column zero-padding"
+    >
     <div class="search-wrapper dark-toolbar prm-top-bar-container
      main-header-row layout-row facet-to-left" div="" layout="row"
        ng-class="{'facet-to-left': $ctrl.facetToLeft &amp;&amp; !$ctrl.mediaQueries.xs &amp;&amp; !$ctrl.mediaQueries.sm &amp;&amp; !$ctrl.mediaQueries.md}">
-        <div class="facet-to-left-spacer"  id="facet-to-left-spacer-home-page-corrector"></div>
 
+       <div class="facet-to-left-spacer"  id="facet-to-left-spacer-home-page-corrector"></div>
         <div class="homepage search-elements-wrapper layout-column simple-mode  facet-to-left-search-bar"
             layout="column"
+            style="display:block; width:100%;"
             ng-class="(!$ctrl.advancedSearch ?'simple-mode' : 'advanced-mode')  + ' ' + ($ctrl.mainSearchField ? 'has-input' : '') + ' ' + ($ctrl.mediaQueries.lgPlus ? 'flex-lgPlus-55' : '') + ' ' + ($ctrl.facetToLeft? 'facet-to-left-search-bar' : '')">
             <div class="simple-search-wrapper layout-full-width" aria-hidden="false" style="display:flex;">
-
                 <div flex="100" flex-sm="55" layout="column">
                     <md-card class="default-card">
                         <md-card-title>

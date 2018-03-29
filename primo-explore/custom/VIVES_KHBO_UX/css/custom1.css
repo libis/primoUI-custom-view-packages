@@ -4,15 +4,6 @@ prm-citation md-nav-bar ul._md-nav-bar-list li.md-nav-item[name="chicagob"]
 }
 
 
-prm-action-list ul._md-nav-bar-list li[name="RefWorks"] ,
-prm-action-list ul._md-nav-bar-list li[name="RISPushTo"],
-prm-action-list ul._md-nav-bar-list li[name="EndNote"],
-prm-action-list ul._md-nav-bar-list li[name="EasyBib"]
-{
-    display: none
-}
-
-
 md-option[value='fr_FR'] {
     display: none
 }

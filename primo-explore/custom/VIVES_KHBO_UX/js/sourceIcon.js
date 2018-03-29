@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Add Icon of source to briefdisplay
  * Tom vanmechelen
  */
