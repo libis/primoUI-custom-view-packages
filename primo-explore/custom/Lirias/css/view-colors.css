@@ -63,4 +63,17 @@ md-toolbar.md-primoExplore-theme .md-toolbar-tools prm-linked-user-selector md-i
 
 md-content, md-content.md-primoExplore-theme {
   background-color: #fff;
+
 }
+
+#facets > prm-facet  prm-breadcrumbs div.md-chip-remove-container > button {
+  color: #45aab4;
+  padding-left: 0.6em;
+  padding-right: 0.6em;
+}
+#facets > prm-facet  prm-breadcrumbs div.md-chip-remove-container > button:hover {
+  color: #1e6d75;
+  background-color: rgba(69, 170, 180, 0.1);
+  transition: color 0.1s ease;
+}
+
