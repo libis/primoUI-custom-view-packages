@@ -1,4 +1,4 @@
-/* primary color hook end*/
+﻿/* primary color hook end*/
 
 
 span.user-name:before {
@@ -66,7 +66,8 @@ prm-search-bar .search-element-inner  .search-options{
     display: none;
 }
 
-prm-search-bar .search-switch-buttons .md-button.switch-to-advanced{
+prm-search-bar .search-switch-buttons .md-button.switch-to-advanced,
+prm-search-bar .search-switch-buttons .md-button.switch-to-simple{
      /* color:#0053A0; */
      color:#fff;
 }
@@ -79,8 +80,6 @@ prm-search-bar .simple-search-wrapper .search-actions {
 prm-search-bar .simple-search-wrapper .search-actions .md-button.button-confirm{
     color: #fff;
 }
-
-
 
 prm-topbar .top-nav-bar {
     background-color:#fff;
@@ -230,7 +229,8 @@ html, body {
     }
 
 
-    #mainMenu > a {
+    #mainMenu > a,
+    #mainMenu > button {
         box-shadow: none;
     }
 
@@ -246,4 +246,6 @@ html, body {
        align-items: center;
     }
 
-    
+        prm-atoz-search-bar .advanced-search-backdrop, prm-browse-search-bar .advanced-search-backdrop, prm-newspapers-search-bar .advanced-search-backdrop, prm-search-bar .advanced-search-backdrop, prm-tags-search-bar .advanced-search-backdrop {
+        background-color: #003299;
+    }    
