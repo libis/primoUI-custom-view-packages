@@ -104,7 +104,7 @@ app.controller("prmPromoteLoginController", ['$scope', '$http', '$mdDialog', '$c
             'title_label': "Sign In?"
         },
     }
-      $scope.title = locale_text[locale]['title'];
+     $scope.title = locale_text[locale]['title'];
     $scope.title_label = locale_text[locale]['title_label'];
     */
     $scope.primoPromoteLogin = '';

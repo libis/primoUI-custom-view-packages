@@ -1,6 +1,22 @@
 md-option[value='fr_FR'] {
     display: none
 }
+
+/* watermark */
+prm-explore-main .header::before {
+    z-index: 5;
+    background: transparent url("../img/watermark.png") no-repeat;
+    background-size: auto 120%;
+    content :'';
+    background-position: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left:-5px;
+    width: 40%;
+    opacity: 0.7;
+}
+
 /* view color hook */
 /* ---------------- */
 .md-button[aria-label=Search] {
