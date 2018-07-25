@@ -664,6 +664,12 @@ md-option[value='fr_FR'] {
 .prm-secondary-color, prm-search-bookmark-filter .md-button, prm-topbar .top-nav-bar {
     color: #fff
 }
+@media only screen and (min-width: 1280px) {
+  prm-explore-main .header::before {
+      display:none;
+  }
+}
+
 prm-topbar .md-button a,
 prm-topbar .md-button a:link,
 prm-topbar .md-button a:visited
