@@ -530,6 +530,9 @@ prm-search-result-availability-line div{
 
 
 
+prm-recomendations {
+    display: none
+}
   
 prm-login-alma-mashup {
     display:none
@@ -875,6 +878,3 @@ md-content, md-content.md-primoExplore-theme {
   transition: color 0.1s ease;
 }
 
-prm-recomendations {
-  display: none
-}
