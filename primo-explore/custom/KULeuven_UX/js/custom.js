@@ -43,7 +43,7 @@ app.controller("prmNewsController", ['$scope', '$http', 'FeedService', function 
 
     var dm = new Date();
     dm.setHours(24, 0, 0, 0);
-    $scope.maxfeeds = 5;
+    $scope.maxfeeds = 3;
 
     /* set title for locale to '' to hide Title */
     var title = {
@@ -104,7 +104,7 @@ app.controller("prmPromoteLoginController", ['$scope', '$http', '$mdDialog', '$c
             'title_label': "Sign In?"
         },
     }
-      $scope.title = locale_text[locale]['title'];
+     $scope.title = locale_text[locale]['title'];
     $scope.title_label = locale_text[locale]['title_label'];
     */
     $scope.primoPromoteLogin = '';

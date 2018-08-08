@@ -24,8 +24,9 @@ app.controller("prmPromoteLoginController", ['$scope', '$http', '$mdDialog', '$c
         /* Redirect to Login With institution=KULeuven */
         var auth = window.appConfig.authentication[0];
         var loginUrl = self.parentCtrl.loginService.loginUrl(auth['profile-name'], auth['authentication-system']);
-        loginUrl = loginUrl.replace(/institution=([^&])*/, "institution=KUL");
-        document.location.href = loginUrl;
+        //loginUrl = loginUrl.replace(/institution=([^&])*/, "institution=KUL");
+        //      document.location.href=loginUrl;
+        self.parentCtrl.loginService.handleLoginClick();
     }
 }]);
 
@@ -69,7 +70,7 @@ app.controller("prmNewsController", ['$scope', '$http', 'FeedService', function 
 
     var dm = new Date();
     dm.setHours(24, 0, 0, 0);
-    $scope.maxfeeds = 5;
+    $scope.maxfeeds = 3;
 
     /* set title for locale to '' to hide Title */
     var title = {

@@ -69,7 +69,7 @@ app.controller("prmNewsController", ['$scope', '$http', 'FeedService', function 
 
     var dm = new Date();
     dm.setHours(24, 0, 0, 0);
-    $scope.maxfeeds = 5;
+    $scope.maxfeeds = 3;
 
     /* set title for locale to '' to hide Title */
     var title = {
