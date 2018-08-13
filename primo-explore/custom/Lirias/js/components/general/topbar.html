@@ -1,3 +1,4 @@
+<prm-top-bar-before></prm-top-bar-before>
 <div class="top-nav-bar" layout="row" flex-order="1" layout-align="start center" tabindex="0" role="navigation">
     <!-- Accesibility skip to menu -->
     <prm-skip-to tabindex="0"></prm-skip-to>
@@ -33,6 +34,10 @@
                         <prm-search-bookmark-filter class="view-switcher" layout-align="end center" layout="row" hide-sm></prm-search-bookmark-filter>
                     </div>
                     <div>
+                        --
+
+                            {{ $ctrl.showMainMenu }}
+--
                         <prm-change-lang></prm-change-lang>
                     </div>
                 </div>
@@ -45,3 +50,4 @@
     </header>
 
 </div>
+
