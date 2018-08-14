@@ -5,6 +5,10 @@ md-option[value='fr_FR'] {
     display: none
 }
 
+prm-language-selection md-list-item[value='fr_FR']{
+    display:none!important;
+}
+
 .prm-secondary-color, prm-search-bookmark-filter .md-button, prm-topbar .top-nav-bar {
     color: #fff
 }

@@ -49,3 +49,12 @@ div.pin-button {
 div.search-switch-buttons {
     display: none
 }
+
+
+/* remove sign-in */
+prm-user-area-expandable button.sign-in-btn-ctm {
+    display: none
+}
+md-menu-content.prm-user-menu-content md-menu-item.my-library-card-ctm {
+    display: none
+}

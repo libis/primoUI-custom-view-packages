@@ -661,6 +661,10 @@ md-option[value='fr_FR'] {
     display: none
 }
 
+prm-language-selection md-list-item[value='fr_FR']{
+    display:none!important;
+}
+
 .prm-secondary-color, prm-search-bookmark-filter .md-button, prm-topbar .top-nav-bar {
     color: #fff
 }
@@ -719,6 +723,15 @@ div.pin-button {
 
 /* remove link to advanced search */
 div.search-switch-buttons {
+    display: none
+}
+
+
+/* remove sign-in */
+prm-user-area-expandable button.sign-in-btn-ctm {
+    display: none
+}
+md-menu-content.prm-user-menu-content md-menu-item.my-library-card-ctm {
     display: none
 }
 
