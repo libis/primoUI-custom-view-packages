@@ -1,0 +1,34 @@
+md-option[value='fr_FR'] {
+    display: none
+}
+
+
+/*Uncomment the follwoing lines to move facets to the left*/
+
+/*
+prm-search > md-content.md-primoExplore-theme .main {
+    display: -webkit-flex; !* Safari *!
+    -webkit-flex-flow: row-reverse wrap; !* Safari 6.1+ *!
+    display: flex;
+    flex-flow: row-reverse wrap;
+
+}
+.screen-gt-sm .sidebar{
+    webkit-flex: 0 0 15%;
+    flex: 0 0 15%;
+}
+
+*/
+
+
+div._md-select-menu-container.md-primoExplore-theme md-select-menu md-content {  
+    height: 356px;
+    max-height: 356px;
+}
+div._md-select-menu-container.md-primoExplore-theme  md-select-menu {   
+    height: 356px; 
+    max-height: 356px; 
+}
+
+
+

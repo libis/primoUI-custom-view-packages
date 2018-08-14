@@ -1,0 +1,8 @@
+prm-action-list ul._md-nav-bar-list li[name="RefWorks"] ,
+prm-action-list ul._md-nav-bar-list li[name="RISPushTo"],
+prm-action-list ul._md-nav-bar-list li[name="EndNote"],
+prm-action-list ul._md-nav-bar-list li[name="EasyBib"]
+{
+ /*   display: none */
+}
+

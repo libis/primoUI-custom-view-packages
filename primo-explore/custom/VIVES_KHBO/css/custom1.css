@@ -1,0 +1,43 @@
+prm-citation md-nav-bar ul._md-nav-bar-list li.md-nav-item[name="chicagob"]
+{
+    display: none
+}
+
+
+md-option[value='fr_FR'] {
+    display: none
+}
+add-pnx-xml {
+    z-index: 15;
+    position: absolute;
+    opacity: .3;
+    font-size: .75em;
+    top: .4em;
+    left: 2.5em;
+}
+
+add-source-icon {
+    display: inline-block;
+    margin-left: 1em;
+    margin-top: -2px;
+}
+
+
+add-source-icon div.sourceid img.source-icon {
+    display: inline-block;
+    max-height: 18px;
+    width: auto;
+    height: auto;
+    transform: none;
+    min-width: auto;
+    min-height: auto;
+    vertical-align: bottom;
+}
+
+add-source-icon div.sourceid span.source-text {
+    font-size:small;
+    margin-left: 0.4em;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
