@@ -49,7 +49,7 @@
 -->
 
 <select name="campus" id="campusview" style='padding-top: 0.2em; color: #53738c;'
-onchange="document.location.href = location.protocol + location.port + '//' + location.host + '/' + this.value;">
+onchange="document.location.href = location.protocol + location.port + '//' + location.host + '/primo_library/libweb/action/search.do?vid=' + this.value;">
                         <option value="">Selecteer locatie</option>
                         <option value="KULeuven_LUCA">Sint-Lucas Brussel en Gent</option>
                         <option value="KULeuven_ODISEE">Brussel, Gent en Aalst</option>
@@ -79,7 +79,7 @@ onchange="document.location.href = location.protocol + location.port + '//' + lo
              <br>
               <a href="http://services.libis.be/library_info/" target="_blank" id="find_library" aria-label="Find Library Contact Info" title="Find Library Contact Info" class="md-primoExplore-theme">
               <span class="md-headline" id="ContentFindLibrary">
-                  Vind bibliotheek
+                  Zoek bibliotheek
               </span>
               </a>
               <br>
