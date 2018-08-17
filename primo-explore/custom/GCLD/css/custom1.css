@@ -4,6 +4,19 @@ div.search-result-availability-line-wrapper
     display: none
 }
 
+md-option[value='fr_FR'] {
+    display: none
+}
+
+prm-language-selection md-list-item[value='fr_FR']{
+    display:none!important;
+}
+prm-user-area {
+    display: none
+}
+md-menu-item.my-library-card-ctm {
+    display: none
+}
 
 prm-topbar > div.top-nav-bar prm-logo-after,
 prm-topbar > div.top-nav-bar prm-user-area

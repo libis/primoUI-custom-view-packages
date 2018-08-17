@@ -1,7 +1,16 @@
-prm-user-area {
+md-option[value='fr_FR'] {
     display: none
 }
 
+prm-language-selection md-list-item[value='fr_FR']{
+    display:none!important;
+}
+prm-user-area {
+    display: none
+}
+md-menu-item.my-library-card-ctm {
+    display: none
+}
 .logo-image{
   background:white;
   padding:3px;

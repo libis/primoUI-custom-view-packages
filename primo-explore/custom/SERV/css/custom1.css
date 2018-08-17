@@ -4,3 +4,6 @@ md-option[value='fr_FR'] {
 prm-user-area {
     display: none
 }
+md-menu-item.my-library-card-ctm {
+    display: none
+}
