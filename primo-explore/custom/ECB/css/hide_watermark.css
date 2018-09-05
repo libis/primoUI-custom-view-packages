@@ -3,3 +3,16 @@
       background: none;
 	}
 }
+
+@supports not (mix-blend-mode: overlay) {
+	prm-explore-main .header::before {
+	    background: none;
+	}
+    }
+    /* check if IE */
+    @media screen\0, @media screen\9 {
+	prm-explore-main .header::before {
+	    background: none;
+	}
+    }
+    

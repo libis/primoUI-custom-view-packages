@@ -926,6 +926,25 @@ html, body {
         prm-atoz-search-bar .advanced-search-backdrop, prm-browse-search-bar .advanced-search-backdrop, prm-newspapers-search-bar .advanced-search-backdrop, prm-search-bar .advanced-search-backdrop, prm-tags-search-bar .advanced-search-backdrop {
         background-color: #003299;
     }    
+@media only screen and (min-width: 1280px) {
+	prm-explore-main .header::before {
+      background: none;
+	}
+}
+
+@supports not (mix-blend-mode: overlay) {
+	prm-explore-main .header::before {
+	    background: none;
+	}
+    }
+    /* check if IE */
+    @media screen\0, @media screen\9 {
+	prm-explore-main .header::before {
+	    background: none;
+	}
+    }
+    
+
 /* primary color hook end*/
 
 /*
