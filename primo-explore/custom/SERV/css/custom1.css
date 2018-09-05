@@ -10,3 +10,6 @@ md-menu-item.my-library-card-ctm {
 prm-topbar  prm-user-area-expandable > button.user-button {
     display: none
 }
+prm-full-view-service-container prm-login-alma-mashup {
+    display: none
+}
