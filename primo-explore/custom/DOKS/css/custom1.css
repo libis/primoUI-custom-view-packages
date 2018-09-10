@@ -672,6 +672,10 @@ prm-language-selection md-list-item[value='fr_FR']{
   prm-explore-main .header::before {
       display:none;
   }
+
+  prm-logo prm-logo-after, div#home-buttons-holder {
+    display: block !important;
+  }
 }
 
 prm-topbar .md-button a,
