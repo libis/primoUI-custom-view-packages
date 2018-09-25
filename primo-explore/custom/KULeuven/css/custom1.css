@@ -41,6 +41,11 @@ prm-topbar button.md-button#logout {
 
 
 
+/* Hide times-cited in full view */
+prm-times-cited {
+    display: inline !important; 
+}
+
 /* view color hook */
 /* ---------------- */
 .md-button[aria-label=Search] {
