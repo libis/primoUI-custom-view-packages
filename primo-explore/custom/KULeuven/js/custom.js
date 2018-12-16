@@ -150,14 +150,17 @@ app.controller("prmPromoteLoginController", ['$scope', '$http', '$mdDialog', '$c
         };
     }
 
-    if (!self.parentCtrl.isLoggedIn) {
-        if (localStorage['primoPromoteLogin'] === 'alwaysSignin') {
-            /* Sreiderict to login */;
-            self.parentCtrl.loginService.handleLoginClick();
-        } else {
-            if (!sessionStorage['primoPromoteLogin'] && !localStorage['primoPromoteLogin']) {
-                $scope.showSignInPopup();
-                sessionStorage.setItem('primoPromoteLogin', 'SignInPopup');
+    /* Ignore this in prm-login-alma-mashup, only if parent is prm-user-area*/
+    if ($element.nativeElement.closest('prm-user-area')) {
+        if (!self.parentCtrl.isLoggedIn) {
+            if (localStorage['primoPromoteLogin'] === 'alwaysSignin') {
+                /* Sreiderict to login */;
+                self.parentCtrl.loginService.handleLoginClick();
+            } else {
+                if (!sessionStorage['primoPromoteLogin'] && !localStorage['primoPromoteLogin']) {
+                    $scope.showSignInPopup();
+                    sessionStorage.setItem('primoPromoteLogin', 'SignInPopup');
+                }
             }
         }
     }
