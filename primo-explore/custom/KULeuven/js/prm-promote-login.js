@@ -11,7 +11,7 @@ app.component('prmPromoteLogin', {
     template: '',
 });
 
-app.controller("prmPromoteLoginController", ['$scope', '$http', '$mdDialog', '$cookies', function ($scope, $http, $mdDialog, $cookies) {
+app.controller("prmPromoteLoginController", ['$scope', '$http', '$mdDialog', '$cookies', $element, function ($scope, $http, $mdDialog, $cookies, $element) {
     let self = this;
     var locale = self.parentCtrl.primolyticsService.userSessionManagerService.i18nService.getLanguage();
    
