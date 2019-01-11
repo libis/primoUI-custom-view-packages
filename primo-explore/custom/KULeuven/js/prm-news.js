@@ -1,6 +1,7 @@
 
 
 var feeds = [
+    /*
             {
                 feedUrl: "https://bib.kuleuven.be/english/ub/news/limo-news/rss",
                 feedLang: ['en_US'],
@@ -15,6 +16,7 @@ var feeds = [
                 feedInst: "KU Leuven",
                 feedFilter: []
             },
+            */
             {
                 feedUrl: "https://limo-libis.blogspot.com/feeds/posts/default",
                 feedLang: ['en_US'],

@@ -1,47 +1,22 @@
+/*
 app.component('prmAuthenticationAfter', {
     bindings: { parentCtrl: '<' },
     controller: 'prmPromoteLoginController',
     template:''
 });
 
-
 app.component('prmPromoteLogin', {
     bindings: { parentCtrl: '<' },
     controller: 'prmPromoteLoginController',
     template: '',
 });
-
+*/
+/*
 app.controller("prmPromoteLoginController", ['$scope', '$http', '$mdDialog', '$cookies', '$element', function ($scope, $http, $mdDialog, $cookies, $element) {
     let self = this;
     var locale = self.parentCtrl.primolyticsService.userSessionManagerService.i18nService.getLanguage();
    
-    var vid = window.appConfig['vid'];
-    /*
-    var locale_text = {
-        'nl_BE': {
-            'title': 'Aanmelden',
-            'title_label': "Aanmeldenn"
-        },
-        'en_US': {
-            'title': 'Sign In',
-            'title_label': "Sign In"
-        },
-        'fr_FR': {
-            'title': 'Sign In?',
-            'title_label': "Sign In?"
-        },
-    }
-
-    $scope.title = locale_text[locale]['title'];
-    $scope.title_label = locale_text[locale]['title_label'];
-    */
     $scope.primoPromoteLogin = '';
-    /*
-    console.log($cookies)
-    var favoriteCookie = $cookies.get('myFavorite');
-    $cookies.put('myFavorite', 'oatmeal');
-    */
-
     $scope.showSignInPopup = function () {
         var parentEl = angular.element(document.body);
 
@@ -72,16 +47,13 @@ app.controller("prmPromoteLoginController", ['$scope', '$http', '$mdDialog', '$c
                 //sessionStorage.setItem('primoPromoteLogin', $scope.primoPromoteLogin);
             }
         };
-
-
-
     }
   
-    /* Ignore this in prm-login-alma-mashup, only if parent is prm-user-area*/
+    // Ignore this in prm-login-alma-mashup, only if parent is prm-user-area
     if ( ($element.nativeElement).closest('prm-user-area') ) {
         if (!self.parentCtrl.isLoggedIn) {
             if (localStorage['primoPromoteLogin'] === 'alwaysSignin') {
-                /* Sreiderict to login */;
+                // redirect to login
                 self.parentCtrl.loginService.handleLoginClick();
             } else {
                 if (!sessionStorage['primoPromoteLogin'] && !localStorage['primoPromoteLogin']) {
@@ -92,3 +64,4 @@ app.controller("prmPromoteLoginController", ['$scope', '$http', '$mdDialog', '$c
         }
      }
 }]);
+*/
