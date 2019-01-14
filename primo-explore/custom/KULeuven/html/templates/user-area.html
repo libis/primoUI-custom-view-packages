@@ -1,10 +1,7 @@
-
-<style>
-
 <div id="user_area_after" class="view-switcher layout-align-end-center layout-row flex-noshrink" style="height: 100%;" layout-align="end center"
     layout="row" flex="noshrink" aria-hidden="false">
 
-	<prm-feedbacklink parent-Ctrl='$ctrl' linktemplate="custom/KULeuven_UX/html/templates/feedbacklink_in_menu.html"></prm-feedbacklink>
+	<prm-feedbacklink parent-Ctrl='$ctrl' linktemplate="custom/KULeuven/html/templates/feedbacklink_in_menu.html"></prm-feedbacklink>
 
 	<div ng-show="$parent.$ctrl.userName().length == 0" ng-click="signIn()" class="view-switcher layout-align-end-center layout-row flex-noshrink"
 	    style="height: 100%" layout-align="end center" layout="row" flex="noshrink" id="library_card_button_not_signed_in">
@@ -62,8 +59,6 @@
 		<span ng-if="!$parent.$ctrl.idpLogout" translate="eshelf.signout.title.link"></span>
 		<span ng-if="$parent.$ctrl.idpLogout" translate="nui.bor_info_failed.signout"></span>
 	</md-button>
--->
-
+	-->
 <prm-authentication></prm-authentication>
-
 </div>

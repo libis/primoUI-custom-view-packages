@@ -926,6 +926,11 @@ html, body {
         prm-atoz-search-bar .advanced-search-backdrop, prm-browse-search-bar .advanced-search-backdrop, prm-newspapers-search-bar .advanced-search-backdrop, prm-search-bar .advanced-search-backdrop, prm-tags-search-bar .advanced-search-backdrop {
         background-color: #003299;
     }    
+/* Hide times-cited in full view */
+prm-times-cited {
+    display: none !important;  
+}
+
 @media only screen and (min-width: 1280px) {
 	prm-explore-main .header::before {
       background: none;
@@ -945,93 +950,6 @@ html, body {
     }
     
 
-/* primary color hook end*/
-
-/*
-prm-search-bookmark-filter #favorites-button,
-prm-topbar .md-button.button-over-dark,
-.md-button {
-     background-color: #0053A0;
-     color: tomato;
-}
-
-.md-button.button-confirm {
-      color:darkmagenta;
-      background-color:khaki;
-}
-
-.md-button.button-confirm :hover {
-      color: palegreen;
-      background-color:lime;
-}
-
-
-.md-toolbar-tools {
-   background-color: pink;
-}
-
-prm-user-area .user-menu-button .user-name {
-    color: lime;
-}
-
-    direction: rtl;
-*/
-
-/* change order in de user menu: No Sign-out behind mouseover place*/
-md-fab-toolbar.md-left .md-toolbar-tools {
-  flex-direction: row;
-  justify-content: flex-end;
-}
-
-
-span.user-name {
-}
-span.user-name:before {
- /* content: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20version%3D%221.1%22%20id%3D%22Capa_1%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%2033.054%2033.054%22%20xml%3Aspace%3D%22preserve%22%20width%3D%22100%25%22%20height%3D%22100%25%22%20style%3D%22color%3A%20%23ffffff%3Bopacity%3A%200.56%3B%22%3E%0A%3Cpath%20d%3D%22M2%2C3H22C23.05%2C3%2024%2C3.95%2024%2C5V19C24%2C20.05%2023.05%2C21%2022%2C21H2C0.95%2C21%200%2C20.05%200%2C19V5C0%2C3.95%200.95%2C3%202%2C3M14%2C6V7H22V6H14M14%2C8V9H21.5L22%2C9V8H14M14%2C10V11H21V10H14M8%2C13.91C6%2C13.91%202%2C15%202%2C17V18H14V17C14%2C15%2010%2C13.91%208%2C13.91M8%2C6A3%2C3%200%200%2C0%205%2C9A3%2C3%200%200%2C0%208%2C12A3%2C3%200%200%2C0%2011%2C9A3%2C3%200%200%2C0%208%2C6Z%22%20style%3D%22color%3Ainherit%3Bfill%3AcurrentColor%3Bopacity%3A%20inherit%3B%22%2F%3E%3C%2Fsvg%3E);  */
-content: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20version%3D%221.1%22%20id%3D%22Capa_1%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%2040%2040%22%20xml%3Aspace%3D%22preserve%22%20width%3D%22100%25%22%20height%3D%22100%25%22%20style%3D%22color%3A%20%230053A0%3Bopacity%3A1%3B%22%3E%0A%3Cpath%20d%3D%22M2%2C3H22C23.05%2C3%2024%2C3.95%2024%2C5V19C24%2C20.05%2023.05%2C21%2022%2C21H2C0.95%2C21%200%2C20.05%200%2C19V5C0%2C3.95%200.95%2C3%202%2C3M14%2C6V7H22V6H14M14%2C8V9H21.5L22%2C9V8H14M14%2C10V11H21V10H14M8%2C13.91C6%2C13.91%202%2C15%202%2C17V18H14V17C14%2C15%2010%2C13.91%208%2C13.91M8%2C6A3%2C3%200%200%2C0%205%2C9A3%2C3%200%200%2C0%208%2C12A3%2C3%200%200%2C0%2011%2C9A3%2C3%200%200%2C0%208%2C6Z%22%20style%3D%22color%3Ainherit%3Bfill%3AcurrentColor%3Bopacity%3A%20inherit%3B%22%2F%3E%3C%2Fsvg%3E); 
- height: 45px;
- width: 70px;
-}
-span.user-name:after {
-}
-span.user-name:before , span.user-name:after{
-  display:inline-block;
-  vertical-align: middle;
-}
-
-prm-topbar .top-nav-bar {
-    background-color:#fff;
- }
-
-prm-user-area {
-      background-color:#fff;
-}
-
-prm-user-area .user-menu-button .user-name{
-    color:#0053A0;
-}
-
-prm-search-bookmark-filter #favorites-button {
-    color: #fff;
-    background-color: #0053A0;
-}
-
-prm-search-bar .search-switch-buttons .md-button.switch-to-advanced {
-    color: #0053A0;
-}
-
-
-/* {
-  background-color: #0053A0,
-  background-color: #CCCCCC,
-  background-color: white,
-  background-color: #5C92BD,
-  background-color: tomato,
-  background-color: #0f7d00,
-  background-color: gray,
-  background-color: #e08303
-}
-*/
 animate-popover {
     clip-path: none;
 }
