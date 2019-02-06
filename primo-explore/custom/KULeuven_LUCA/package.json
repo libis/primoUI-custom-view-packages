@@ -1,5 +1,5 @@
 {
-  "name": "KULeuven_UX",
+  "name": "KULeuven",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/libis/primoUI-kuleuven_ux-package.git"
+    "url": "git+https://github.com/libis/primoUI-kuleuven-package.git"
   },
   "bugs": {
     "url": "https://github.com/libis/primoUI-central-package/issues"
