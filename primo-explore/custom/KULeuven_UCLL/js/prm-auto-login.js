@@ -1,9 +1,10 @@
+/*
 app.component('prmAuthenticationAfter', {
     bindings: { parentCtrl: '<' },
     controller: 'prmPromoteLoginController',
     template:''
 });
-
+*/
 app.component('prmPromoteLogin', {
     bindings: { parentCtrl: '<' },
     controller: 'prmPromoteLoginController',

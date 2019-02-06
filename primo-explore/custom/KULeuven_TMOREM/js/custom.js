@@ -3,12 +3,13 @@
 'use strict';
 
 var app = angular.module('viewCustom', ['angularLoad']);
+/*
 app.component('prmAuthenticationAfter', {
     bindings: { parentCtrl: '<' },
     controller: 'prmPromoteLoginController',
-    template: ''
+    template:''
 });
-
+*/
 app.component('prmPromoteLogin', {
     bindings: { parentCtrl: '<' },
     controller: 'prmPromoteLoginController',
@@ -21,7 +22,6 @@ app.controller("prmPromoteLoginController", ['$scope', '$http', '$mdDialog', '$c
     var vid = window.appConfig['vid'];
 
     if (!self.parentCtrl.isLoggedIn) {
-        /* Redirect to Login With institution=KULeuven */
         var auth = window.appConfig.authentication[0];
         var loginUrl = self.parentCtrl.loginService.loginUrl(auth['profile-name'], auth['authentication-system']);
         loginUrl = loginUrl.replace(/institution=([^&])*/, "institution=KUL");
