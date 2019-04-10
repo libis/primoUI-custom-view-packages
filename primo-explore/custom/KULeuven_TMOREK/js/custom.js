@@ -3,13 +3,12 @@
 'use strict';
 
 var app = angular.module('viewCustom', ['angularLoad']);
-/*
 app.component('prmAuthenticationAfter', {
     bindings: { parentCtrl: '<' },
     controller: 'prmPromoteLoginController',
     template: ''
 });
-*/
+
 app.component('prmPromoteLogin', {
     bindings: { parentCtrl: '<' },
     controller: 'prmPromoteLoginController',
