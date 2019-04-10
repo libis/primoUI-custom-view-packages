@@ -533,6 +533,10 @@ prm-search-result-availability-line div{
 prm-recomendations {
     display: none
 }
+span.availability-status.fulltext_unknown {
+/*    display: none */
+}
+
   
 prm-login-alma-mashup {
     display:none
@@ -22479,6 +22483,7 @@ md-content md-content, md-content.md-primoExplore-theme {
 div.md-range-content md-input-container input[type="number"]{
     padding: 2px
 }
+
 .full-view-inner-container{
   display: -webkit-box;
   display: -moz-box;
@@ -22488,7 +22493,10 @@ div.md-range-content md-input-container input[type="number"]{
   flex-direction: column;
 }
 
-#details{
+
+/* -----------------------------------------------------*/
+/*view online*/
+#getit_link1_0{
   -webkit-box-ordinal-group: 1;
   -moz-box-ordinal-group: 1;
   -ms-flex-order: 1;
@@ -22496,34 +22504,33 @@ div.md-range-content md-input-container input[type="number"]{
   order: 1;
 }
 
-/*details*/
-button[aria-label='Details'],
-button[aria-label='Détails'],
+button[aria-label='Bekijk online'],
+button[aria-label='View Online'],
+button[aria-label='Consulter'],
 button[orderIndex='1']{
   order: 1;
 }
 
 
-
 /* -----------------------------------------------------*/
-/*Where to find it?*/
-#links{
+/*details*/
+#details{
   -webkit-box-ordinal-group: 2;
   -moz-box-ordinal-group: 2;
   -ms-flex-order: 2;
   -webkit-order: 2;
   order: 2;
 }
-/*links*/
-button[aria-label='Links'],
-button[aria-label='Liens'],
+
+button[aria-label='Details'],
+button[aria-label='Détails'],
 button[orderIndex='2']{
   order: 2;
 }
 
-
-
-#altmetrics{
+/* -----------------------------------------------------*/
+/*links*/
+#links{
   -webkit-box-ordinal-group: 3;
   -moz-box-ordinal-group: 3;
   -ms-flex-order: 3;
@@ -22531,20 +22538,16 @@ button[orderIndex='2']{
   order: 3;
 }
 
-button[aria-label="Altmetrics"],
-button[aria-label="altmetrics"],
+button[aria-label='Links'],
+button[aria-label='Liens'],
 button[orderIndex='3']{
   order: 3;
 }
 
 
-
-
-
-
 /* -----------------------------------------------------*/
-/*view online*/
-#getit_link1_0{
+/*altmetrics*/
+#altmetrics{
   -webkit-box-ordinal-group: 4;
   -moz-box-ordinal-group: 4;
   -ms-flex-order: 4;
@@ -22552,13 +22555,12 @@ button[orderIndex='3']{
   order: 4;
 }
 
-/*view online*/
-button[aria-label='Bekijk online'],
-button[aria-label='View Online'],
-button[aria-label='Consulter'],
+button[aria-label="Altmetrics"],
+button[aria-label="altmetrics"],
 button[orderIndex='4']{
   order: 4;
 }
+
 
 /* -----------------------------------------------------*/
 #getit_link1_1{
@@ -22588,7 +22590,6 @@ button[orderIndex='5']{
 }
 
 
-
 /*?????*/
 #getit_link2{
   -webkit-box-ordinal-group: 6;
@@ -22598,7 +22599,11 @@ button[orderIndex='5']{
   order: 6;
 }
 
-
+button[aria-label='Check locaties'],
+button[aria-label='Check Locations'],
+button[orderIndex='6']{
+  order: 6;
+}
 
 
 #tags{
@@ -22614,8 +22619,6 @@ button[aria-label='Tags'],
 button[orderIndex='6']{
   order: 6;
 }
-
-
 
 #services-index {
   display:flex;
@@ -22638,7 +22641,6 @@ button[aria-label='Citations'],
 button[orderIndex='0']{
   order: 0;
 }
-
 
 
 /* view color hook */
