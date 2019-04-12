@@ -22597,12 +22597,14 @@ button[orderIndex='5']{
   -ms-flex-order: 6;
   -webkit-order: 6;
   order: 6;
+  display:none;
 }
 
 button[aria-label='Check locaties'],
 button[aria-label='Check Locations'],
 button[orderIndex='6']{
   order: 6;
+  display:none;
 }
 
 
