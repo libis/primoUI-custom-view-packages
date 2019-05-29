@@ -239,7 +239,7 @@ md-toolbar.md-primoExplore-theme .md-toolbar-tools prm-linked-user-selector md-i
   .prm-personalization-bg {
     background-color: #7d1538; }
 
-prm-login-alma-mashup .bar.alert-bar{
+.bar.alert-bar{
   background: #7fa0ca;
   border-color: #7290b5;
 }
