@@ -16,7 +16,7 @@
 
     /*
     color: #031700;
-    background-color: rgba(15, 125, 0, 0.1); 
+    background-color: rgba(15, 125, 0, 0.1);
   */
 }
 
@@ -26,10 +26,10 @@ prm-search-bar .simple-search-wrapper .search-actions {
 
 .md-button[id=payFinesNow] {
   color: #ccc; }
-  .md-button[id=payFinesNow]:hover:not([disabled]), 
-  .md-button[id=payFinesNow]:focus:not([disabled]), 
-  .md-button[id=payFinesNow].hovered:not([disabled]), 
-  .md-button[id=payFinesNow].md-focused:not([disabled]), 
+  .md-button[id=payFinesNow]:hover:not([disabled]),
+  .md-button[id=payFinesNow]:focus:not([disabled]),
+  .md-button[id=payFinesNow].hovered:not([disabled]),
+  .md-button[id=payFinesNow].md-focused:not([disabled]),
   .md-button[id=payFinesNow]._md-focused:not([disabled]) {
     color: #a88a8a;
     background-color: rgba(204, 204, 204, 0.1); }
@@ -238,5 +238,16 @@ md-toolbar.md-primoExplore-theme .md-toolbar-tools prm-linked-user-selector md-i
   color: #7d1538; }
   .prm-personalization-bg {
     background-color: #7d1538; }
+
+prm-login-alma-mashup .bar.alert-bar{
+  background: #7fa0ca;
+  border-color: #7290b5;
+}
+
+.md-button.button-as-link, .bar prm-authentication .md-button{
+  background: #345e9c;
+  color:white;
+}
+
 
 /* primary color hook end*/
