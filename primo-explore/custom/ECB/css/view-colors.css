@@ -244,7 +244,7 @@ md-toolbar.md-primoExplore-theme .md-toolbar-tools prm-linked-user-selector md-i
   border-color: #7290b5;
 }
 
-.md-button.button-as-link, .bar prm-authentication .md-button{
+.bar prm-authentication .md-button{
   background: #345e9c;
   color:white;
 }
