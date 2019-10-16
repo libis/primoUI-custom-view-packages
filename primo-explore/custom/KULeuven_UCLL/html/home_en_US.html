@@ -23,7 +23,7 @@
             <md-card-content>
                 <a href="/KULeuven_regio">
                     <span class="md-headline" id="ContentKULLOCLink">
-                        Limo on Campus
+                        Select another campus
                     </span>
                 </a>
                 <br />
@@ -32,17 +32,17 @@
                      color: #53738c;
                      border:1px solid #53738c;
                      margin-left:0.3em;
-                      display:inline-block; background-color: #fff; font-size:1.2em;">
+                     background-color: #fff; font-size:1.2em;">
 
                     <!--- Link to KULeuven Regionale View new UI -->
 
-
-                       <select name="campus" id="campusview" style='padding-top: 0.2em; color: #53738c;'
+                    <select name="campus" id="campusview" style='padding-top: 0.2em; color: #53738c; width:100%'
                        onchange="document.location.href = location.protocol + location.port + '//' + location.host + '/' + this.value;">
                         <option value="">Select location</option>
+                        <option value="KULeuven">Leuven, Kortrijk, Antwerpen, Brugge en Sint-Lucas Brussel en TDC Gent</option>
                         <option value="KULeuven_LUCA">Sint-Lucas Brussel en Gent</option>
                         <option value="KULeuven_ODISEE">Brussel, Gent en Aalst</option>
-                        <option value="KULeuven_UCLL">Diepenbeek</option>
+                      
                         <option value="KULeuven_TMOREM">Sint-Katelijne-Waver</option>
                         <option value="KULeuven_TMOREK">Geel</option>
                     </select>

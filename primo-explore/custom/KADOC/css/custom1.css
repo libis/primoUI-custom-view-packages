@@ -1,6 +1,9 @@
 md-option[value='fr_FR'] {
     display: none
 }
+prm-full-view-service-container prm-login-alma-mashup {
+    display: none
+}
 /* prm-static[section='homepage'] */
 prm-search > md-content > prm-static[section='homepage'] .md-headline  {
    font-size: 1.25rem;
