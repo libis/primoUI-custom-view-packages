@@ -1,12 +1,5 @@
 var feeds = [
         {
-		feedUrl: "https://www.faronet.be/blog/382/feed",
-            feedLang: ['nl_BE'],
-            feedContentType: 'snippet',
-            feedInst: "LIMO",
-            feedFilter: []
-        },
-        {
             feedUrl: "https://limo-libis.blogspot.com/feeds/posts/default",
             feedLang: ['en_US'],
             feedContentType: 'full',
@@ -29,17 +22,14 @@ var feeds = [
         }
 ];
 
-
-
-
-
 app.component('prmNews', {
     bindings: { parentCtrl: '<' },
     controller: 'prmNewsController',
     template: `
       <md-card ng-hide="!feedresults.length" class ="default-card _md md-primoExplore-theme">
         <md-card-content>
-         <h1 ng-hide="!feedresults.length || title==='' ">{{title}}</h1>
+
+        <h1 ng-hide="!feedresults.length || title==='' ">{{title}}</h1>
          <md-list>
          <md-list-item ng-repeat="feed in feedresults | limitTo: maxfeeds">
          <div class ="md-list-item-text"> <a href="{{ feed.link }}" target="_news">{{ feed.title }}</a>
@@ -82,7 +72,6 @@ app.controller("prmNewsController", ['$scope', '$http', 'FeedService', function 
         FeedService.parseFeed(feedConf).then(function (res) {
             //    console.log('----FeedService.parseFeed(feedConf) ---------------------')
             $scope.feedresults = $scope.feedresults.concat(res);
-
             FeedService.sortFeed($scope.feedresults);
         });
     }
