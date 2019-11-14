@@ -1,0 +1,7 @@
+prm-search-result-availability-line > div, prm-search-result-availability-line > div.layout-row {
+    display:none  !important;
+}
+
+#getit_link1_0, button[aria-label='Where to find it ?'] {
+    display:none;
+}

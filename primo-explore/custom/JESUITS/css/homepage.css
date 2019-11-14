@@ -1,0 +1,9 @@
+@media only screen and (min-width: 1280px) {
+  prm-explore-main .header::before {
+      display:none;
+  }
+
+  prm-logo prm-logo-after, div#home-buttons-holder {
+    display: block !important;
+  }
+}
