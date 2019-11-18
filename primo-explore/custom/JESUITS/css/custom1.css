@@ -668,6 +668,10 @@ span.availability-status.fulltext_unknown {
 /*    display: none */
 }
 
+prm-record-collection-paths {
+   display: none
+}
+
 div#user_area_after{
     padding-left: 0.8em;
 }
