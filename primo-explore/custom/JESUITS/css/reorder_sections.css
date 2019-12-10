@@ -8,7 +8,6 @@
   flex-direction: column;
 }
 
-
 /* -----------------------------------------------------*/
 /*view online*/
 #getit_link1_0{
@@ -19,10 +18,10 @@
   order: 1;
 }
 
-button[aria-label='Bekijk online'],
-button[aria-label='View Online'],
-button[aria-label='Consulter'],
-button[orderIndex='1']{
+#services-index button[aria-label='Bekijk online'],
+#services-index button[aria-label='View Online'],
+#services-index button[aria-label='Consulter'],
+#services-index button[orderIndex='1']{
   order: 1;
 }
 
@@ -30,17 +29,17 @@ button[orderIndex='1']{
 /* -----------------------------------------------------*/
 /*details*/
 #details{
-  -webkit-box-ordinal-group: 2;
-  -moz-box-ordinal-group: 2;
-  -ms-flex-order: 2;
-  -webkit-order: 2;
-  order: 2;
+  -webkit-box-ordinal-group: 1;
+  -moz-box-ordinal-group: 1;
+  -ms-flex-order: 1;
+  -webkit-order: 1;
+  order: 1;
 }
 
-button[aria-label='Details'],
-button[aria-label='Détails'],
-button[orderIndex='2']{
-  order: 2;
+#services-index button[aria-label='Details'],
+#services-index button[aria-label='Détails'],
+#services-index button[orderIndex='1']{
+  order: 1;
 }
 
 /* -----------------------------------------------------*/
@@ -53,12 +52,23 @@ button[orderIndex='2']{
   order: 3;
 }
 
-button[aria-label='Links'],
-button[aria-label='Liens'],
-button[orderIndex='3']{
+#services-index button[aria-label='Links'],
+#services-index button[aria-label='Locations'],
+#services-index button[aria-label='Locaties'],
+#services-index button[aria-label='Bezitsinformatie'],
+#services-index button[aria-label='Liens'],
+#services-index button[orderIndex='3']{
   order: 3;
 }
 
+
+#locationsLinks{
+  -webkit-box-ordinal-group: 3;
+  -moz-box-ordinal-group: 3;
+  -ms-flex-order: 3;
+  -webkit-order: 3;
+  order: 3;
+}
 
 /* -----------------------------------------------------*/
 /*altmetrics*/
@@ -70,15 +80,15 @@ button[orderIndex='3']{
   order: 4;
 }
 
-button[aria-label="Altmetrics"],
-button[aria-label="altmetrics"],
-button[orderIndex='4']{
+#services-index button[aria-label="Altmetrics"],
+#services-index button[aria-label="altmetrics"],
+#services-index button[orderIndex='4']{
   order: 4;
 }
 
 
 /* -----------------------------------------------------*/
-#getit_link1_1{
+#services-index #getit_link1_1{
   -webkit-box-ordinal-group: 4;
   -moz-box-ordinal-group: 4;
   -ms-flex-order: 4;
@@ -97,10 +107,10 @@ button[orderIndex='4']{
 }
 
 /*send to*/
-button[aria-label='Export'],
-button[aria-label='Send to'],
-button[aria-label='Envoyer à'],
-button[orderIndex='5']{
+#services-index button[aria-label='Export'],
+#services-index button[aria-label='Send to'],
+#services-index button[aria-label='Envoyer à'],
+#services-index button[orderIndex='5']{
   order: 5;
 }
 
@@ -115,9 +125,9 @@ button[orderIndex='5']{
   display:none;
 }
 
-button[aria-label='Check locaties'],
-button[aria-label='Check Locations'],
-button[orderIndex='6']{
+#services-index button[aria-label='Check locaties'],
+#services-index button[aria-label='Check Locations'],
+#services-index button[orderIndex='6']{
   order: 6;
   display:none;
 }
@@ -132,8 +142,8 @@ button[orderIndex='6']{
 }
 
 /*tags*/
-button[aria-label='Tags'],
-button[orderIndex='6']{
+#services-index button[aria-label='Tags'],
+#services-index button[orderIndex='6']{
   order: 6;
 }
 
@@ -153,9 +163,10 @@ button[orderIndex='6']{
 }
 
 /*citations*/
-button[aria-label='Citaties'],
-button[aria-label='Citations'],
-button[orderIndex='0']{
+#services-index button[aria-label='Citaties'],
+#services-index button[aria-label='Citations'],
+#services-index button[orderIndex='0']{
   order: 0;
 }
+
 
