@@ -7,3 +7,14 @@
     display: block !important;
   }
 }
+
+div#logo_partners{
+  margin-left:auto;
+  margin-right: auto;
+}
+
+div#logo_partners img{
+  max-height: 4.3em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
