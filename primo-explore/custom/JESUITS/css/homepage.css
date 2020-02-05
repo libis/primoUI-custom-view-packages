@@ -8,6 +8,7 @@
   }
 }
 
+<<<<<<< HEAD
 @media only screen and (max-width: 1600px) {
   prm-logo .logo-image, prm-logo img{
     height: 60px;
@@ -24,3 +25,15 @@
 .js_card_r{
   max-width: none;
 }
+=======
+div#logo_partners{
+  margin-left:auto;
+  margin-right: auto;
+}
+
+div#logo_partners img{
+  max-height: 3em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+>>>>>>> e3f72602160ff3005513a8884aef14c4c099c040

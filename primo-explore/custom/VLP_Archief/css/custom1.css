@@ -648,6 +648,11 @@ i.material-icons {
     left: 0
 }
 
+#advanced-search div.date-range-inputs md-input-container md-select {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
 /* view color hook */
 /* ---------------- */
 .md-button[aria-label=Search] {
