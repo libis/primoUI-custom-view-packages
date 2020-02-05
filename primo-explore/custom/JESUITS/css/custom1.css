@@ -704,6 +704,23 @@ prm-language-selection md-list-item[value='fr_FR']{
   }
 }
 
+@media only screen and (max-width: 1600px) {
+  prm-logo .logo-image, prm-logo img{
+    height: 60px;
+  }
+}
+
+.js_card{
+  height: 100%;
+  background: url('/primo-explore/custom/JESUITS/img/bibliotheek.jpg');
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.js_card_r{
+  max-width: none !important;
+}
+=======
 div#logo_partners{
   margin-left:auto;
   margin-right: auto;
@@ -714,6 +731,7 @@ div#logo_partners img{
   margin-left: 1em;
   margin-right: 1em;
 }
+
 prm-topbar .md-button a,
 prm-topbar .md-button a:link,
 prm-topbar .md-button a:visited
