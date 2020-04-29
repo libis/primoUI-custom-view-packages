@@ -1,0 +1,15 @@
+prm-user-area {
+    display: none
+}
+md-menu-item.my-library-card-ctm {
+    display: none
+}
+md-menu-content.prm-user-menu-content md-menu-item.ovl-button-ctm{
+    display: none
+}
+prm-topbar  prm-user-area-expandable > button.user-button {
+    display: none
+}
+prm-full-view-service-container prm-login-alma-mashup {
+    display: none
+}

@@ -1,0 +1,78 @@
+<style>
+    @import url(https://fonts.googleapis.com/icon?family=Material+Icons );
+
+    md-card md-card-content span.md-headline {
+        line-height: 2em;
+    }
+
+    md-card md-card-content span.md-headline::before {
+        font-family: 'Material Icons';
+        font-weight: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        text-transform: none;
+        display: inline-block;
+        white-space: nowrap;
+        word-wrap: normal;
+        direction: ltr;
+        font-feature-settings: 'liga';
+        -webkit-font-feature-settings: 'liga';
+        -webkit-font-smoothing: antialiased;
+        margin-right: 2px;
+        vertical-align: middle;
+        /*
+     line-height: 1;
+     font-size: 20px;
+     color: #53738c;
+    */
+    }
+
+    md-card md-card-content span#ContentInLimo::before {
+        content: "info";
+    }
+
+    md-card md-card-content span#ContentSearchTips::before {
+        content: "help";
+    }
+
+    md-card md-card-content span#ContentKULLOCLink::before {
+        content: "my_location";
+    }
+</style>
+
+
+<md-content layout-xs="column" layout="column" class="display-block-xs">
+    <div flex-xs="100" flex="100" layout="column">
+
+        <md-card class="default-card _md md-primoExplore-theme" id="limo-content">
+            <md-card-content>
+                <span class="md-headline" id="ContentInLimo">
+                    Wat vindt u in deze databank?
+                </span>
+                <p>
+                    In deze databank verzamelen we relevante literatuur over duaal leren, werkplekleren, levenslang
+                    leren, competenties, ondernemerschap en veel meer.
+                    De databank is gelinkt aan <a href="https://odin.syntravlaanderen.be" target="_blank">kennisplatform
+                        ODIN van het Agentschap voor Ondernemingsvorming, SYNTRA Vlaanderen</a>
+                </p>
+
+                <br />
+
+                <span class="md-headline" id="ContentInLimo">
+                    Hoe kan u zoeken in deze databank?
+                </span>
+                <p>
+                    U kan alle documenten in de databank fulltext doorzoeken. Openbare documenten kan u ook downloaden.
+                    Niet-openbare documenten kunnen fulltext doorzocht worden en worden eveneens weergegeven als
+                    zoekresultaat, maar zijn niet downloadbaar.
+                    Waar mogelijk wordt u doorverwezen naar de plaats waar u het document wél kan downloaden.
+                </p>
+                <br />
+                <prm-searchtips parent-Ctrl='$ctrl'></prm-searchtips>
+
+            </md-card-content>
+
+        </md-card>
+    </div>
+
+</md-content>
