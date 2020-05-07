@@ -2,3 +2,6 @@
   background:white;
   padding:3px;
 }
+prm-full-view-service-container prm-login-alma-mashup {
+  display: none
+}
