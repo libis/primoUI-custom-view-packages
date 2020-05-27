@@ -597,6 +597,7 @@ md-list.prm-list.prm-linkable-list-items md-list-item > .md-button > .button-con
 
 /* primary color hook end*/
 
+
 prm-brief-result .item-title span {
   color:#1C7074;
 }
@@ -621,4 +622,13 @@ prm-topbar  prm-user-area-expandable > button.user-button {
 }
 prm-full-view-service-container prm-login-alma-mashup {
     display: none
+}
+
+/*tags*/
+button[aria-label='Tags'],
+button[orderIndex='6']{
+  display:none
+}
+#tags{
+    display:none
 }

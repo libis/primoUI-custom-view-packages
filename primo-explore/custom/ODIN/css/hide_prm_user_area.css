@@ -13,3 +13,12 @@ prm-topbar  prm-user-area-expandable > button.user-button {
 prm-full-view-service-container prm-login-alma-mashup {
     display: none
 }
+
+/*tags*/
+button[aria-label='Tags'],
+button[orderIndex='6']{
+  display:none
+}
+#tags{
+    display:none
+}
