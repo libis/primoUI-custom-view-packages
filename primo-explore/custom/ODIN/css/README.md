@@ -1,11 +1,11 @@
 # The Primo New UI Customization Workflow Development Environment
 
 #From Css VLP to SYNTRA
-#595959 => #1C7074;
-#616161 => #30999C;
-#4d6b82 => #30999C;
+#595959 => #1C7074 => #268f93
+#616161 => #30999C => #30b7bc;
+#4d6b82 => #30999C => #30b7bc;
 
-#5C92BD => #1C7074
+#5C92BD => #1C7074 => #268f93
 
 ##css documentation
 
