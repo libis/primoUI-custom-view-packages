@@ -239,11 +239,6 @@ md-toolbar.md-primoExplore-theme .md-toolbar-tools prm-linked-user-selector md-i
   .prm-personalization-bg {
     background-color: #7d1538; }
 
-.bar.alert-bar{
-  background: #7fa0ca;
-  border-color: #7290b5;
-}
-
 .bar prm-authentication .md-button{
   background: #345e9c;
   color:white;
