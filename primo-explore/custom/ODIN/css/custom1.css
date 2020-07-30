@@ -608,6 +608,9 @@ div#footer {
 md-option[value='fr_FR'] {
     display: none
 }
+md-option[value='en_US'] {
+    display: none
+}
 prm-user-area {
     display: none
 }
