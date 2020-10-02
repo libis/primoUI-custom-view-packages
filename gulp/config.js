@@ -141,8 +141,7 @@ var SERVERS = {
  *   var PROXY_SERVER = 'http://abc-primo.hosted.exlibrisgroup.com'
  *   var PROXY_SERVER = 'https://abc-primo.hosted.exlibrisgroup.com:443'
  */
-var PROXY_SERVER = 'http://limo.q.libis.be';
-
+var PROXY_SERVER = 'https://limo.q.libis.be';
 
 let buildParams = {
     customFile: customFile,
