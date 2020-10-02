@@ -1,0 +1,4 @@
+
+div.search-elements-wrapper div.search-extras prm-pre-filters > div > md-input-container:nth-child(1) {
+  display: none;
+}
