@@ -55,7 +55,7 @@
     "require-npm": "1.4.1",
     "run-sequence": "1.2.1",
     "shelljs": "0.6.0",
-    "tar-fs": "1.13.0",
+    "tar-fs": "1.16.2",
     "typescript": "^1.8.10",
     "unzip": "^0.1.11"
   },
