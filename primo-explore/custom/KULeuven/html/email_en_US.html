@@ -73,8 +73,9 @@
                             </prm-brief-result-container>
                             <br />
 
-                            <div dir="auto" ng-if="item.pnx.display.description">{{item.pnx.display.description}}</div>
-
+                            <div dir="auto" ng-if="item.pnx.display.lds04">{{item.pnx.display.lds04}}<br /><br /></div>
+                            <div dir="auto" ng-if="!item.pnx.display.lds04 && item.pnx.display.description" ng-bind-html="item.pnx.display.description"><br /><br /></div>
+                            
                             <div display-mode="email" dir="auto" ng-repeat="lib in item.pnx.display.availlibrary">
                               {{lib.split('$$')[2].substring(1) | translate}} {{lib.split('$$')[3].substring(1)}} {{lib.split('$$')[4].substring(1)}}
                             </div>
