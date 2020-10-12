@@ -596,6 +596,71 @@ md-list.prm-list.prm-linkable-list-items md-list-item > .md-button > .button-con
   background-color: white; }
 
 /* primary color hook end*/
+prm-featured-result-item .card-image{
+  display:none;
+}
+
+prm-featured-result-item md-card{
+  width:150px !important;
+}
+
+prm-featured-result-item md-card md-card-title {
+    margin-top: 0 !important;
+    background: #f5f5f5;
+}
+
+prm-featured-result-item md-card.is-book md-card-title {
+    margin-top: 0 !important;
+    text-align: left;
+    max-width: 100%;
+}
+
+prm-featured-result-item .book-height{
+  max-height: none;
+  height: 150px;
+  color: #44707b;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+prm-featured-result-item .md-button{
+  border-radius: 0;
+}
+
+prm-featured-result-item md-card.is-book md-card-title-text.has-ellipsis:after{
+  background: transparent;
+}
+
+prm-search-result-list prm-featured-result-item .md-button:not([disabled]):hover md-card-title{
+  background: #ffffff;
+}
+
+prm-search-result-list prm-featured-result-item .md-button:not([disabled]):hover md-card-title-text.has-ellipsis:after{
+  background: #ffffff;
+}
+
+prm-featured-result-item md-card.is-book md-card-title-text.has-ellipsis {
+  text-align: left !important;
+}
+
+prm-featured-result-item md-card.is-book md-card-title-text.has-ellipsis {
+  max-height: none !important;
+}
+
+prm-featured-result-item .md-button {
+    border-radius: 0;
+    background: transparent !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+prm-featured-result-item md-card {
+    width: 150px !important;
+    height: 150px;
+}
+
 @font-face {
     font-family: "Material Icons";
     font-style: normal;
