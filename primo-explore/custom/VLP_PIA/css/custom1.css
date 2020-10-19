@@ -661,6 +661,24 @@ prm-featured-result-item md-card {
     height: 150px;
 }
 
+/*
+prm-search-result-availability-line > div, prm-search-result-availability-line > div.layout-row {
+    display:none  !important;
+}
+
+#getit_link1_0, 
+#getit_link1_1, 
+button[aria-label='Where to find it ?'],
+button[aria-label='View Online'],
+button[aria-label='Vindplaats'],
+button[aria-label='Aanvraag'],
+button[aria-label='Bekijk online'],
+button[aria-label='Consulter'],
+button[aria-label='Location'],
+button[orderIndex='4']{
+    display:none;
+}
+*/
 @font-face {
     font-family: "Material Icons";
     font-style: normal;
