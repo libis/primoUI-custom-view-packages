@@ -44,12 +44,11 @@
 
 
 
-<md-content layout-xs="column" layout="column" class="display-block-xs">
-    <div flex-xs="100" flex="100" layout="column">
-
-
+<md-content layout-xs="column" layout="row" class="display-block-xs">
+    <div flex-xs="100" flex="50" layout="column">
         <md-card class="default-card _md md-primoExplore-theme" id="limo-content">
             <md-card-content>
+                <img style="height:70px;margin-bottom:8px;" src="/primo-explore/custom/KBC/img/BIB10s.JPG"><br />
                 <a href="https://www.kbc.be/particulieren/nl/product/verzekeren/welkom-in-de-verzekeringsbib.html" target="_blank" id="limo_content_link" aria-label="Link to info about content in Limo"
                    title="Link to info about content in Limo">
                     <span class="md-headline" id="ContentInLimo">
@@ -59,13 +58,24 @@
                 </a>
                 <br />
                 <prm-searchtips parent-Ctrl='$ctrl'></prm-searchtips>
-                <br /><br />
-                <p>
-                  Didn't find the book you were looking for? Contact the library team via <strong>ivb@verz.kbc.be</strong>.
-                  </p>
             </md-card-content>
 
         </md-card>
     </div>
+    <div flex-xs="100" flex="50" layout="column">
+        <md-card class="default-card _md md-primoExplore-theme" id="limo-content">
+            <md-card-content>
+              <p>
+                Search this catalogue,maybe it's already in our collection of books and e-books.
+                </p>
 
+              <p>
+                  Didn't find the book you were looking for? Contact the library team via <strong>ivb@verz.kbc.be</strong>.
+              </p>
+              <p>
+                Want us to buy the book? Fill in this <a target="_blank" href="https://kbcgroup.sharepoint.com/sites/151132/Lists/Aanvraag%20boek/NewForm.aspx?Source=https%3a//kbcgroup.sharepoint.com/sites/151132/Lists/Aanvraag%2520boek/Allitemsg.aspx%23InplviewHashcaacc3b0-fb65-4e2a-960e-764f18bc3d7e%3D&RootFolder=">form</a> and we'll do the rest.
+                </p>
+            </md-card-content>
+        </md-card>
+    </div>
 </md-content>
