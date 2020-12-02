@@ -748,7 +748,7 @@ prm-search md-content.layout-align-center-start  .facet-to-left-spacer {
 div.search-input input#searchBar {
     padding-right: 5em;
     text-overflow: ellipsis;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 prm-main-menu div.settings-container,
@@ -767,8 +767,8 @@ prm-search-bar .search-switch-buttons .md-button.switch-to-simple{
 }
 
 prm-search-bar .simple-search-wrapper .search-actions {
-    background-color:#0053A0; 
-    
+    background-color:#0053A0;
+
     color: #fff;
 }
 prm-search-bar .simple-search-wrapper .search-actions .md-button.button-confirm{
@@ -803,11 +803,36 @@ prm-user-area .md-button.user-menu-button:hover:not([disabled]) {
 }
 
 prm-topbar  .md-button.button-over-dark,
-prm-topbar div#home-buttons-holder .md-button, 
-prm-topbar div[id='main menu']  .md-button, 
-prm-topbar .md-button, 
+prm-topbar div#home-buttons-holder .md-button,
+prm-topbar div[id='main menu']  .md-button,
+prm-topbar .md-button,
 prm-user-area .md-button.user-menu-button {
     color:#226091;
+}
+
+.hoverable-over-dark:not(.disable-hover), .md-button.button-over-dark:not(.disable-hover),
+ prm-main-menu[menu-type="full"] .md-button.md-focused:not(.disable-hover),
+ prm-main-menu[menu-type="full"] .md-button .md-input-container-dummy > .md-select-dummy:not(.disable-hover):focus,
+ prm-main-menu[menu-type="full"] .md-button:not(.disable-hover):focus,
+ prm-main-menu[menu-type="full"] .md-button:not(.disable-hover):hover,
+ prm-main-menu[menu-type="full"] .md-button md-select:not(.disable-hover):focus,
+ prm-main-menu[menu-type="full"] .overlay-menu-item.md-focused:not(.disable-hover),
+ prm-main-menu[menu-type="full"] .overlay-menu-item .md-input-container-dummy > .md-select-dummy:not(.disable-hover):focus,
+ prm-main-menu[menu-type="full"] .overlay-menu-item:not(.disable-hover):focus,
+ prm-main-menu[menu-type="full"] .overlay-menu-item:not(.disable-hover):hover,
+ prm-main-menu[menu-type="full"] .overlay-menu-item md-select:not(.disable-hover):focus,
+ prm-main-menu[menu-type="full"] md-button:not(.disable-hover):focus,
+ prm-main-menu[menu-type="full"] md-button:not(.disable-hover):hover,
+ prm-topbar .md-button:not(.disable-hover), prm-user-area .md-button.user-menu-button:not(.disable-hover),
+ prm-user-area md-fab-toolbar ._md-fab-action-item .md-button:not(.disable-hover),
+ prm-user-area md-fab-toolbar ._md-fab-action-item md-input-container:not(.disable-hover),
+ prm-user-area md-fab-toolbar .md-fab-action-item .md-button:not(.disable-hover),
+ prm-user-area md-fab-toolbar .md-fab-action-item md-input-container:not(.disable-hover){
+  color:#226091 !important;
+}
+
+#favorites-button{
+  color: white !important;
 }
 
 
@@ -892,7 +917,7 @@ html, body {
         background-color: #fff;
         */
         min-width: 25px;
-    }   
+    }
     prm-alphabet-toolbar .md-button.letter-button {
         /* color: #226091; */
         /*
@@ -900,14 +925,14 @@ html, body {
         background-color: #fff;
         */
         width: 25px;
-    }  
+    }
 
     prm-alphabet-toolbar .md-button:hover:not([disabled]) {
         /*
         color: #fff;
         background-color: #5C92BD;
         */
-    }   
+    }
 
     prm-topbar {
         height: 69px;
@@ -942,7 +967,8 @@ html, body {
 
         prm-atoz-search-bar .advanced-search-backdrop, prm-browse-search-bar .advanced-search-backdrop, prm-newspapers-search-bar .advanced-search-backdrop, prm-search-bar .advanced-search-backdrop, prm-tags-search-bar .advanced-search-backdrop {
         background-color: #003299;
-    }    
+    }
+
 /* Hide times-cited in full view */
 prm-times-cited {
     display: none !important;  
