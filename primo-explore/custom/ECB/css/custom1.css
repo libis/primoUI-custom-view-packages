@@ -763,7 +763,17 @@ prm-search-bar .search-element-inner  .search-options{
 prm-search-bar .search-switch-buttons .md-button.switch-to-advanced,
 prm-search-bar .search-switch-buttons .md-button.switch-to-simple{
      /* color:#0053A0; */
-     color:#fff;
+     color:#fff !important;
+}
+
+prm-search-bar .search-switch-buttons .md-button.switch-to-advanced:hover,
+prm-search-bar .search-switch-buttons .md-button.switch-to-simple:hover{
+     /* color:#0053A0; */
+     color:#226091 !important;
+}
+
+.md-dialog-container.fixed-container{
+  background: transparent !important;
 }
 
 prm-search-bar .simple-search-wrapper .search-actions {
