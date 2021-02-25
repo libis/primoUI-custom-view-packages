@@ -1,0 +1,25 @@
+#advanced-search div.date-range-inputs md-input-container md-select {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+
+
+/* Remove date range
+#advanced-search div.date-range-inputs md-input-container md-select
+{
+ display: none !important;
+}
+*/
+
+/* 
+#advanced-search  md-card > div.margin-top-small.layout-align-start-center.layout-row,
+prm-advanced-search  div:nth-child(2) > md-card:nth-child(1) > div:nth-child(1) > div:nth-child(2),
+prm-pre-filters md-input-container:nth-child(1)
+{
+ display: none !important;
+}
+*/
+
+
