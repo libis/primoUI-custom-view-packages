@@ -12,8 +12,7 @@ app.controller("prmAanwinstenController", ['$scope', '$http', function ($scope, 
     var self = this;
     var vid = window.appConfig['vid'];
     var now = new Date();
-    var year = now.getFullYear()
-    console.log("Current year is: " + year);
+    var year = now.getFullYear();
     var month = now.getMonth() + 1;
     if(month - 1 == 0){
       month = 12;

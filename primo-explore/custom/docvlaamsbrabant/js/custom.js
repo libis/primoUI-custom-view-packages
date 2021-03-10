@@ -14,7 +14,6 @@ app.controller("prmAanwinstenController", ['$scope', '$http', function ($scope, 
     var vid = window.appConfig['vid'];
     var now = new Date();
     var year = now.getFullYear();
-    console.log("Current year is: " + year);
     var month = now.getMonth() + 1;
     if (month - 1 == 0) {
         month = 12;
@@ -84,5 +83,54 @@ app.controller("prmNewsController", ['$scope', '$http', 'FeedService', function 
             FeedService.sortFeed($scope.feedresults);
         });
     }
+}]);
+
+app.component('prmSpotlight', {
+    bindings: { parentCtrl: '<' },
+    controller: 'prmSpotlightController',
+    template: '\n    <md-card class="default-card _md md-primoExplore-theme">\n      <img src="{{img}}" class="md-card-image" alt="image caption">\n      <md-card-title>\n          <md-card-title-text>\n              <span class="md-headline">{{title}}</span>\n          </md-card-title-text>\n      </md-card-title>\n      <md-card-content>\n        <div ng-bind-html="description"></div>\n      </md-card-content>\n    </md-card>\n'
+});
+
+app.controller("prmSpotlightController", ['$scope', '$http', function ($scope, $http) {
+    var self = this;
+
+    var RSS_URL = 'https://documentatiecentrumvb.blogspot.com/feeds/posts/default/?alt=rss';
+
+    fetch("https://api.rss2json.com/v1/api.json?rss_url=" + RSS_URL).then(function (res) {
+        return res.json();
+    }).then(function (data) {
+
+        var res = data.items;
+        console.log(res);
+        var posts = res.filter(function (item) {
+            return item.categories.length > 0;
+        }); // That's the main trick* !
+
+
+        function toText(node) {
+            var tag = document.createElement('div');
+            tag.innerHTML = node;
+            node = tag.innerText;
+            return node;
+        }
+        function shortenText(text, startingPoint, maxLength) {
+            return text.length > maxLength ? text.slice(startingPoint, maxLength) : text;
+        }
+
+        posts.forEach(function (el) {
+            $scope.title = el.title;
+            $scope.description = toText(el.description);
+
+            var img = el.thumbnail; //Get thumnail image from rss feed
+            console.log(img);
+            $scope.img = 'https://1.bp.blogspot.com/-tcxIdAf5xwU/YDO8JM4qqJI/AAAAAAAAAAk/aZ_hBh8KfdkE_l4Lhlqd7r6RcH5TDwjAgCLcBGAsYHQ/s971/Holle%2Bwegen.jpg';
+            if (img) {
+                img = img.replace(/\/s72\-c/, ""); //replace /s72\-c with nothing
+                $scope.img = img;
+            }
+
+            $scope.url = el.linkL;
+        });
+    });
 }]);
 })();
