@@ -4,6 +4,11 @@ prm-user-area {
 md-menu-item.my-library-card-ctm {
     display: none
 }
+
+prm-topbar  prm-user-area-expandable {
+    display: none
+}
+
 prm-topbar  prm-user-area-expandable > button.user-button {
     display: none
 }
