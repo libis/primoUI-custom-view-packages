@@ -42,19 +42,17 @@ app.controller("prmSpotlightController", ['$scope', '$http', function ($scope, $
         text
     }
 
-    posts.forEach(el => {
-        $scope.title = el.title;
-        $scope.description = toText(el.description);
+    $scope.title = posts[0].title;
+    $scope.description = toText(posts[0].description);
 
-        var img = el.thumbnail;  //Get thumnail image from rss feed
-        console.log(img);
-        $scope.img = 'https://1.bp.blogspot.com/-tcxIdAf5xwU/YDO8JM4qqJI/AAAAAAAAAAk/aZ_hBh8KfdkE_l4Lhlqd7r6RcH5TDwjAgCLcBGAsYHQ/s971/Holle%2Bwegen.jpg';
-        if(img){
-          img = img.replace(/\/s72\-c/, "");//replace /s72\-c with nothing
-          $scope.img = img;
-        }
+    var img = posts[0].thumbnail;  //Get thumnail image from rss feed
+    console.log(img);
+    $scope.img = 'https://1.bp.blogspot.com/-tcxIdAf5xwU/YDO8JM4qqJI/AAAAAAAAAAk/aZ_hBh8KfdkE_l4Lhlqd7r6RcH5TDwjAgCLcBGAsYHQ/s971/Holle%2Bwegen.jpg';
+    if(img){
+      img = img.replace(/\/s72\-c/, "");//replace /s72\-c with nothing
+      $scope.img = img;
+    }
 
-        $scope.url = el.linkL;
-      });
+    $scope.url = posts[0].linkL;
     });
   }]);

@@ -28,6 +28,19 @@ app.controller("prmAanwinstenController", ['$scope', '$http', function ($scope, 
     $scope.url = window.location.origin + "/primo-explore/search?query=any,contains,acquisitionDate" + year + month + "DOCVB*,AND&tab=phys_items_tab&search_scope=PHYS_ITEMS&vid=docvlaamsbrabant&lang=nl_BE&mode=advanced&offset=0;";
 }]);
 
+app.component('prmUserAreaExpandableAfter', {
+    bindings: { parentCtrl: '<' },
+    controller: 'prmUserAreaExpandableController'
+});
+
+app.controller("prmUserAreaExpandableController", ['$scope', function ($scope) {
+    console.log($scope);
+    var self = this;
+    console.log(self);
+    console.log(self.parentCtrl.showUserArea);
+    self.parentCtrl.showUserArea = false;
+}]);
+
 var feeds = [{
     feedUrl: "https://limo-libis.blogspot.com/feeds/posts/default",
     feedLang: ['en_US'],
@@ -117,20 +130,18 @@ app.controller("prmSpotlightController", ['$scope', '$http', function ($scope, $
             return text.length > maxLength ? text.slice(startingPoint, maxLength) : text;
         }
 
-        posts.forEach(function (el) {
-            $scope.title = el.title;
-            $scope.description = toText(el.description);
+        $scope.title = posts[0].title;
+        $scope.description = toText(posts[0].description);
 
-            var img = el.thumbnail; //Get thumnail image from rss feed
-            console.log(img);
-            $scope.img = 'https://1.bp.blogspot.com/-tcxIdAf5xwU/YDO8JM4qqJI/AAAAAAAAAAk/aZ_hBh8KfdkE_l4Lhlqd7r6RcH5TDwjAgCLcBGAsYHQ/s971/Holle%2Bwegen.jpg';
-            if (img) {
-                img = img.replace(/\/s72\-c/, ""); //replace /s72\-c with nothing
-                $scope.img = img;
-            }
+        var img = posts[0].thumbnail; //Get thumnail image from rss feed
+        console.log(img);
+        $scope.img = 'https://1.bp.blogspot.com/-tcxIdAf5xwU/YDO8JM4qqJI/AAAAAAAAAAk/aZ_hBh8KfdkE_l4Lhlqd7r6RcH5TDwjAgCLcBGAsYHQ/s971/Holle%2Bwegen.jpg';
+        if (img) {
+            img = img.replace(/\/s72\-c/, ""); //replace /s72\-c with nothing
+            $scope.img = img;
+        }
 
-            $scope.url = el.linkL;
-        });
+        $scope.url = posts[0].linkL;
     });
 }]);
 })();
