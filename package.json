@@ -53,7 +53,7 @@
     "require-dir": "0.3.2",
     "require-npm": "1.4.1",
     "run-sequence": "1.2.1",
-    "shelljs": "0.6.0",
+    "shelljs": "0.8.5",
     "tar-fs": "1.13.0",
     "typescript": "^1.8.10",
     "unzip": "^0.1.11"
