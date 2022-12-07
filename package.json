@@ -21,7 +21,7 @@
     "css-color-extractor": "0.0.4",
     "css-color-extractor-cli": "0.0.1",
     "del": "2.2.1",
-    "express": "4.16.0",
+    "express": "4.17.3",
     "fs-extra": "2.1.2",
     "glob": "6.0.4",
     "gulp-angular-templatecache": "^2.0.0",
