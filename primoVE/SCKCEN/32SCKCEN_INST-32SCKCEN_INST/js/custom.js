@@ -12,9 +12,7 @@ app.component('prmUserAreaExpandableAfter', {
 
 app.controller("prmPromoteLoginController", ['$scope', '$http', '$mdDialog', '$cookies', function ($scope, $http, $mdDialog, $cookies) {
     let self = this;
-    var locale = self.parentCtrl.primolyticsService.userSessionManagerService.i18nService.getLanguage();
-    var vid = window.appConfig['vid'];
-
+    
     var onCampus = false;
     var allowed_ips = ["193.190.185.205","134.58.253.30"]
 
